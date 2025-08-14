@@ -68,19 +68,27 @@ const Sidebar = () => {
     return (
         <div className={semidark ? 'dark' : ''}>
             <nav
-                className={`sidebar fixed min-h-screen h-full top-0 bottom-0 w-[260px] shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] z-50 transition-all duration-300 ${semidark ? 'text-white-dark' : ''}`}
+                className={`sidebar fixed min-h-screen h-full top-0 bottom-0 ${isSidebarExpanded || isHovered ? 'w-[260px]' : 'w-[80px]'} shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] z-50 transition-all duration-300 ${semidark ? 'text-white-dark' : ''}`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <div className="bg-white dark:bg-black h-full">
                     <div className="flex justify-between items-center px-4 py-3">
                         <NavLink to="/" className="main-logo flex flex-col items-center shrink-0">
-                            <img
-                                className="transition-all duration-300"
-                                style={{ width: showBigLogo ? '200px' : '32px' }}
-                                src={showBigLogo ? Logo : smallLogo}
-                                alt="logo"
-                            />
+                            <div className="h-12 flex items-center justify-center">
+                                <img
+                                    src={Logo}
+                                    alt="logo"
+                                    className={`absolute left-8 transition-opacity duration-300 ease-in-out ${showBigLogo ? 'opacity-100' : 'opacity-0'}`}
+                                    style={{ width: '180px' }}
+                                />
+                                <img
+                                    src={smallLogo}
+                                    alt="small-logo"
+                                    className={`absolute left-3  transition-opacity duration-300 ease-in-out ${showBigLogo ? 'opacity-0' : 'opacity-100'}`}
+                                    style={{ width: '38px' }}
+                                />
+                            </div>
                         </NavLink>
                         <button
                             type="button"

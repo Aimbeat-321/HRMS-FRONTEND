@@ -139,7 +139,7 @@
     @apply ltr:ml-0 rtl:mr-0;
   }
   & .sidebar {
-    @apply ltr:-left-[280px] rtl:-right-[280px];
+    /* @apply ltr:-left-[280px] rtl:-right-[280px]; */
   }
   &.toggle-sidebar .sidebar {
     @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[280px] lg:rtl:-right-[280px];
