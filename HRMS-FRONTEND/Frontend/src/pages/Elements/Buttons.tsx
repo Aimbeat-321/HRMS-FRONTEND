@@ -55,7 +55,7 @@ const Buttons = () => {
                     <div className="mb-5">
                         <div className="flex w-full">
                             <div className="flex items-center justify-center w-1/2">
-                                <button type="button" className="btn btn-primary">
+                                <button type="button" className=" btn-primary">
                                     Primary
                                 </button>
                             </div>
@@ -150,7 +150,7 @@ const Buttons = () => {
                             <button type="button" className="btn btn-danger">
                                 Danger
                             </button>
-                            <button type="button" className="btn btn-secondary">
+                            <button type="button" className="btn-secondary">
                                 Secondary
                             </button>
                             <button type="button" className="btn btn-dark">
@@ -351,7 +351,7 @@ const Buttons = () => {
                     </div>
                     <div className="mb-5">
                         <div className="flex flex-col gap-4">
-                            <button type="button" className="btn btn-primary w-full">
+                            <button type="button" className="btn-primary w-full">
                                 Button
                             </button>
                             <button type="button" className="btn btn-info w-full">

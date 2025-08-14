@@ -517,7 +517,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
 
 @utility main-container {
   & .main-content {
-    @apply transition-all duration-300 lg:ltr:ml-[280px] lg:rtl:mr-[280px];
+    /* @apply transition-all duration-300 lg:ltr:ml-[280px] lg:rtl:mr-[280px]; */
   }
   .horizontal & .main-content {
     @apply ltr:ml-0 rtl:mr-0;
@@ -529,7 +529,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
 
 @utility main-content {
   .main-container & {
-    @apply transition-all duration-300 lg:ltr:ml-[280px] lg:rtl:mr-[280px];
+    /* @apply transition-all duration-300 lg:ltr:ml-[280px] lg:rtl:mr-[280px]; */
   }
   .horizontal .main-container & {
     @apply ltr:ml-0 rtl:mr-0;
@@ -1317,7 +1317,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     }
 
     body {
-        @apply bg-[#fafafa] font-nunito;
+        @apply bg-[#fafafa];
     }
     label {
         @apply mb-1.5 block font-semibold;
@@ -1519,7 +1519,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
   pre.hljs {
     @apply p-6 rounded-md overflow-x-auto bg-[#191e3a]!;
   }
-  @font-face {
+  /* @font-face {
     font-family: 'proxima-regular';
     src:
       url('assets/fonts/fonnts.com-proximasansregular-webfont.woff2')
@@ -1574,6 +1574,53 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     font-style: normal;
   }
 
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('assets/fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Extrabld.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'proxima-medium';
+    src: url('assets/fonts/ProximaSansMedium.woff2') format('woff2'),
+        url('assets/fonts/ProximaSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'proxima-regular';
+    src: url('assets/fonts/ProximaSansRegular.woff2') format('woff2'),
+        url('assets/fonts/ProximaSansRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'proxima-semibold';
+    src: url('assets/fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Cn Rg';
+    src: url('assets/fonts/ProximaNovaCond-Bold.woff2') format('woff2'),
+        url('assets/fonts/ProximaNovaCond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
   /* CSS Variables for Colors */
   :root {
     --primary-red: #ef444e;
@@ -1594,51 +1641,63 @@ body {
 
 /* Buttons */
 .btn-primary {
-  font-family: "proxima-condensed-bold", sans-serif;
-  @apply bg-(--primary-red) transition-colors duration-100 
-         hover:bg-[#F26971] active:bg-[#D93E47] disabled:bg-[#808080]
-         rounded-[30px] min-h-[60px] w-[170px] h-[60px]
-         py-[10px] px-[24px] text-(--primary-white);
+    font-family: "proxima-condensed-bold", sans-serif;
+    @apply bg-[var(--primary-red)] text-[var(--primary-white)] rounded-[30px] 
+           min-h-[3.75rem] h-[3.75rem] w-[min(170px,40vw)] py-2.5 px-6 text-base
+           transition-colors duration-100 hover:bg-[#F26971] active:bg-[#D93E47] 
+           disabled:bg-[#808080] 
+           md:min-h-[3rem] md:h-[3rem] md:w-[min(140px,35vw)] md:py-2 md:px-4 md:text-sm
+           sm:min-h-[2.5rem] sm:h-[2.5rem] sm:w-[min(120px,30vw)] sm:py-1.5 sm:px-3 sm:text-xs;
 }
 
 .btn-secondary {
-  font-family: "proxima-condensed-bold", sans-serif;
-  @apply border border-(--primary-red) transition-colors duration-100 
-         hover:bg-[#FDECED] active:bg-[#FAC5C8] disabled:border-[#808080] 
-         disabled:text-[#808080] disabled:hover:bg-(--primary-white)
-         rounded-[30px] min-h-[60px] w-[170px] h-[60px]
-         py-[10px] px-[24px] text-(--primary-red);
+    font-family: "proxima-condensed-bold", sans-serif;
+    @apply border border-[var(--primary-red)] text-[var(--primary-red)] rounded-[30px] 
+           min-h-[3.75rem] h-[3.75rem] w-[min(170px,40vw)] py-2.5 px-6 text-base
+           transition-colors duration-100 hover:bg-[#FDECED] active:bg-[#FAC5C8] 
+           disabled:border-[#808080] disabled:text-[#808080] disabled:hover:bg-[var(--primary-white)]
+           md:min-h-[3rem] md:h-[3rem] md:w-[min(140px,35vw)] md:py-2 md:px-4 md:text-sm
+           sm:min-h-[2.5rem] sm:h-[2.5rem] sm:w-[min(120px,30vw)] sm:py-1.5 sm:px-3 sm:text-xs;
 }
 
 .btn-tertiary {
-  font-family: "proxima-condensed-bold", sans-serif;
-  @apply text-(--primary-red) hover:text-[#F26971] hover:underline 
-         transition-all duration-100;
+    font-family: "proxima-condensed-bold", sans-serif;
+    @apply text-[var(--primary-red)] hover:text-[#F26971] hover:underline 
+           transition-all duration-100 text-base
+           md:text-sm sm:text-xs;
 }
 
 /* Tags */
 .tags {
-  @apply flex h-[20px] px-2 justify-center items-center gap-[10px] rounded-[16px] text-[10px];
+    @apply flex h-[1.25rem] px-2 justify-center items-center gap-2 rounded-[16px] text-[0.625rem]
+           md:h-[1rem] md:px-1.5 md:gap-1.5 md:text-[0.5rem]
+           sm:h-[0.875rem] sm:px-1 sm:gap-1 sm:text-[0.4375rem];
 }
 
 /* Widgets */
 .widget {
-  font-family: "proxima-condensed-bold", sans-serif;
-  @apply flex justify-center items-center gap-[10px] px-16 py-[10px] 
-         rounded-[30px] text-sm font-medium transition-colors duration-200;
+    font-family: "proxima-condensed-bold", sans-serif;
+    @apply flex justify-center items-center gap-2 px-8 py-2.5 rounded-[30px] text-sm font-medium 
+           transition-colors duration-200
+           md:px-6 md:py-2 md:text-xs md:gap-1.5
+           sm:px-4 sm:py-1.5 sm:text-[0.625rem] sm:gap-1;
 }
 
 /* Avatars */
 .avatar {
-  font-family: "proxima-condensed-bold", sans-serif;
-  @apply flex justify-center items-center gap-[10px] rounded-full
-         w-[60px] h-[60px] p-[18px];
+    font-family: "proxima-condensed-bold", sans-serif;
+    @apply flex justify-center items-center gap-2 rounded-full w-[3.75rem] h-[3.75rem] p-4
+           md:w-[3rem] md:h-[3rem] md:p-3 md:gap-1.5
+           sm:w-[2.5rem] sm:h-[2.5rem] sm:p-2 sm:gap-1;
 }
 
-.dashboard-bg{
-  @apply bg-gray-100
+/* Dashboard Background */
+.dashboard-bg {
+    @apply bg-gray-100;
 }
 
-.home-card{
-  @apply bg-white p-5 rounded-xl  shadow-xs border border-gray-200
+/* Home Card */
+.home-card {
+    @apply bg-white p-5 rounded-xl shadow-xs border border-gray-200
+           md:p-4 sm:p-3 sm:rounded-lg;
 }
