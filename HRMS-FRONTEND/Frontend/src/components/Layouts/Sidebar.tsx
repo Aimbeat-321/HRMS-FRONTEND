@@ -22,7 +22,13 @@ import IconMenuForms from '../Icon/Menu/IconMenuForms';
 import IconMenuWidgets from '../Icon/Menu/IconMenuWidgets';
 import IconMenuAuthentication from '../Icon/Menu/IconMenuAuthentication';
 import Logo from "../../assets/WeConnect Logo.png";
+import DarkLogo from "../../assets/WeConnect Logo Dark.png"
 import smallLogo from "../../../public/logo192.png";
+import { GoOrganization } from "react-icons/go";
+import { IoPeopleOutline } from "react-icons/io5";
+import { CiCalendar } from "react-icons/ci";
+
+
 
 const Sidebar = () => {
     const [currentMenu, setCurrentMenu] = useState<string>('');
@@ -64,7 +70,7 @@ const Sidebar = () => {
 
     const isSidebarExpanded = themeConfig.sidebar && !(window.innerWidth < 1024);
     const showBigLogo = isSidebarExpanded || (!themeConfig.sidebar && isHovered);
-
+    console.log('this is semidark and it',)
     return (
         <div className={semidark ? 'dark' : ''}>
             <nav
@@ -77,7 +83,7 @@ const Sidebar = () => {
                         <NavLink to="/" className="main-logo flex flex-col items-center shrink-0">
                             <div className="h-12 flex items-center justify-center">
                                 <img
-                                    src={Logo}
+                                    src={themeConfig.isDarkMode ? DarkLogo : Logo}
                                     alt="logo"
                                     className={`absolute left-8 transition-opacity duration-300 ease-in-out ${showBigLogo ? 'opacity-100' : 'opacity-0'}`}
                                     style={{ width: '180px' }}
@@ -131,7 +137,8 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'organization' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('organization')}>
                                     <div className="flex items-center">
-                                        <IconMenuUsers className="group-hover:text-primary! shrink-0" />
+                                      
+                                        <GoOrganization className="group-hover:text-primary! shrink-0"  />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Organization')}</span>
                                     </div>
                                     <div className={currentMenu !== 'organization' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -157,7 +164,8 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'people' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('people')}>
                                     <div className="flex items-center">
-                                        <IconMenuContacts className="group-hover:text-primary! shrink-0" />
+                                     
+                                        <IoPeopleOutline   className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('People')}</span>
                                     </div>
                                     <div className={currentMenu !== 'people' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -186,7 +194,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'attendance' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('attendance')}>
                                     <div className="flex items-center">
-                                        <IconMenuCalendar className="group-hover:text-primary! shrink-0" />
+                                        <CiCalendar className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Attendance & Time')}</span>
                                     </div>
                                     <div className={currentMenu !== 'attendance' ? 'rtl:rotate-90 -rotate-90' : ''}>
