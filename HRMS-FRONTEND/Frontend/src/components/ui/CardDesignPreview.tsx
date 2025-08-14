@@ -16,11 +16,11 @@ const CardDesignPreview: React.FC<CardDesignPreviewProps> = ({
       {/* Thumbnail Card */}
       <div className="bg-white shadow-md rounded-xl p-4 flex flex-col items-center border border-gray-200">
         {/* Tailwind CSS ID Card Mockup */}
-        <div className="w-40 h-56 bg-gradient-to-b from-blue-500 to-blue-700 rounded-lg p-3 flex flex-col items-center text-white shadow">
+        <div className="w-40 h-56 bg-linear-to-b from-blue-500 to-blue-700 rounded-lg p-3 flex flex-col items-center text-white shadow-sm">
           <div className="w-16 h-16 bg-white rounded-full mb-3"></div>
           <h3 className="text-sm font-bold">John Doe</h3>
           <p className="text-xs opacity-90">Software Engineer</p>
-          <div className="mt-auto text-xs bg-white text-blue-700 px-2 py-1 rounded">
+          <div className="mt-auto text-xs bg-white text-blue-700 px-2 py-1 rounded-sm">
             Company Name
           </div>
         </div>

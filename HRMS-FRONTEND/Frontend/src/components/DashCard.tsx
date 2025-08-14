@@ -29,7 +29,7 @@ const DashCard: React.FC<DashCardProps> = ({
         `flex flex-col justify-between 
          p-3 sm:p-4 md:p-5 
          rounded-2xl sm:rounded-3xl 
-         shadow-sm cursor-pointer 
+         shadow-xs cursor-pointer 
          min-w-[140px] sm:min-w-[160px] md:min-w-[180px] 
          transition-all duration-200 
          hover:scale-[1.03] sm:hover:scale-105 

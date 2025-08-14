@@ -48,12 +48,12 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="py-7 px-6">
-                                <div className="bg-[#3b3f5c] mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
+                                <div className="bg-dark mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
                                     <IconDroplet />
                                 </div>
-                                <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
+                                <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
                                 <p className="text-white-dark">Mauris nisi felis, placerat in volutpat id, varius et sapien.</p>
                             </div>
                         </div>
@@ -62,12 +62,12 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="py-7 px-6">
-            <div className="bg-[#3b3f5c] mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
+            <div className="bg-dark mb-5 inline-block p-3 text-[#f1f2f3] rounded-full">
                 <svg>...</svg>
             </div>
-            <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
+            <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">Simple</h5>
             <p className="text-white-dark">Mauris nisi felis, placerat in volutpat id, varius et sapien.</p>
         </div>
     </div>
@@ -88,12 +88,12 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="py-7 px-6">
                                 <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
                                     <img src="/assets/images/profile-28.jpeg" alt="cover" className="w-full h-full object-cover" />
                                 </div>
-                                <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
+                                <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
                                 <p className="text-white-dark">Etiam sed augue ac justo tincidunt posuere. Vivamus euismod eros, nec risus malesuada.</p>
                                 <button type="button" className="btn btn-primary mt-6">
                                     Explore More
@@ -105,12 +105,12 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[19rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-76 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="py-7 px-6">
             <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[215px] overflow-hidden">
                 <img src="/assets/images/profile-28.jpeg" alt="cover" className="w-full h-full object-cover" />
             </div>
-            <h5 className="text-[#3b3f5c] text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
+            <h5 className="text-dark text-xl font-semibold mb-4 dark:text-white-light">CLI Based</h5>
             <p className="text-white-dark">Etiam sed augue ac justo tincidunt posuere. Vivamus euismod eros, nec risus malesuada.</p>
             <button type="button" className="btn btn-primary mt-6">
                 Explore More
@@ -134,14 +134,14 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[18rem] w-full bg-[#3b3f5c] shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+                        <div className="max-w-[18rem] w-full bg-dark shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
                             <div className="text-center text-black-light">
                                 <div className="mb-5 w-20 h-20 rounded-full overflow-hidden mx-auto">
                                     <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
                                 </div>
                                 <h5 className="text-white text-[15px] font-semibold mb-2">Luke Ivory</h5>
                                 <p>Manager</p>
-                                <div className="flex justify-center items-center text-[#e2a03f] my-4">
+                                <div className="flex justify-center items-center text-warning my-4">
                                     <IconStar className="fill-warning" />
                                     <IconStar className="fill-warning" />
                                     <IconStar className="fill-warning" />
@@ -156,14 +156,14 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[18rem] w-full bg-[#3b3f5c] shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+    <div className="max-w-[18rem] w-full bg-dark shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
         <div className="text-center text-black-light">
             <div className="mb-5 w-20 h-20 rounded-full overflow-hidden mx-auto">
                 <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
             </div>
             <h5 className="text-white text-[15px] font-semibold mb-2">Luke Ivory</h5>
             <p>Manager</p>
-            <div className="flex justify-center items-center text-[#e2a03f] my-4">
+            <div className="flex justify-center items-center text-warning my-4">
                 <svg>...</svg>
                 <svg>...</svg>
                 <svg>...</svg>
@@ -190,13 +190,13 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[30rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-120 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="p-5 flex items-center flex-col sm:flex-row">
                                 <div className="mb-5 w-20 h-20 rounded-full overflow-hidden">
                                     <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
                                 </div>
-                                <div className="flex-1 ltr:sm:pl-5 rtl:sm:pr-5 text-center sm:text-left">
-                                    <h5 className="text-[#3b3f5c] text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
+                                <div className="flex-1 sm:ltr:pl-5 sm:rtl:pr-5 text-center sm:text-left">
+                                    <h5 className="text-dark text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
                                     <p className="mb-2 text-white-dark">Manager</p>
                                     <span className="badge bg-primary rounded-full">4.5</span>
                                     <p className="font-semibold text-white-dark mt-4 sm:mt-8">
@@ -210,13 +210,13 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[30rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-120 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="p-5 flex items-center flex-col sm:flex-row">
             <div className="mb-5 w-20 h-20 rounded-full overflow-hidden">
                 <img src="/assets/images/profile-34.jpeg" alt="profile" className="w-full h-full object-cover" />
             </div>
-            <div className="flex-1 ltr:sm:pl-5 rtl:sm:pr-5 text-center sm:text-left">
-                <h5 className="text-[#3b3f5c] text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
+            <div className="flex-1 sm:ltr:pl-5 sm:rtl:pr-5 text-center sm:text-left">
+                <h5 className="text-dark text-[15px] font-semibold mb-2 dark:text-white-light">Luke Ivory</h5>
                 <p className="mb-2 text-white-dark">Manager</p>
                 <span className="badge bg-primary rounded-full">4.5</span>
                 <p className="font-semibold text-white-dark mt-4 sm:mt-8">
@@ -242,7 +242,7 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
+                        <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
                             <div className="text-black-light">
                                 <p className="font-semibold mb-5">Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.</p>
                                 <div className="flex">
@@ -261,7 +261,7 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
+    <div className="max-w-[20rem] w-full bg-secondary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-secondary-dark-light dark:shadow-none p-5">
         <div className="text-black-light">
             <p className="font-semibold mb-5">Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.</p>
             <div className="flex">
@@ -292,16 +292,16 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
+                        <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
                             <div className="text-[#515365] dark:text-white-light">
                                 <p className="font-semibold italic mb-5">
                                     Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.
                                 </p>
                                 <div className="flex">
                                     <div className="flex-1">
-                                        <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
+                                        <h5 className="text-dark text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
                                         <p className="text-white-dark mb-1.5">Manager</p>
-                                        <div className="flex justify-start items-center text-[#e2a03f]">
+                                        <div className="flex justify-start items-center text-warning">
                                             <IconStar className="w-3 h-3 fill-warning" />
                                             <IconStar className="w-3 h-3 fill-warning" />
                                             <IconStar className="w-3 h-3 fill-warning" />
@@ -317,16 +317,16 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
+    <div className="max-w-[20rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5 ">
         <div className="text-[#515365] dark:text-white-light">
             <p className="font-semibold italic mb-5">
                 Maecenas nec mi vel lacus condimentum rhoncus dignissim egestas orci. Integer blandit porta placerat. Vestibulum in ultricies.
             </p>
             <div className="flex">
                 <div className="flex-1">
-                    <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
+                    <h5 className="text-dark text-[15px] font-bold mb-1.5 dark:text-white-light">Luke Ivory</h5>
                     <p className="text-white-dark mb-1.5">Manager</p>
-                    <div className="flex justify-start items-center text-[#e2a03f]">
+                    <div className="flex justify-start items-center text-warning">
                         <svg>...</svg>
                         <svg>...</svg>
                         <svg>...</svg>
@@ -354,11 +354,11 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
+                        <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
                             <div className="text-center font-semibold">
                                 <h5 className="text-white text-xl font-bold mb-5 dark:text-white-light">Rating</h5>
                                 <p className="text-white mb-5 text-base">(4.3)</p>
-                                <div className="flex justify-center items-center gap-1 text-[#e2a03f]">
+                                <div className="flex justify-center items-center gap-1 text-warning">
                                     <IconStar className="w-4.5 h-4.5 fill-warning" />
                                     <IconStar className="w-4.5 h-4.5 fill-warning" />
                                     <IconStar className="w-4.5 h-4.5 fill-warning" />
@@ -373,11 +373,11 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
+    <div className="max-w-[20rem] w-full bg-primary shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-0 dark:bg-primary-dark-light dark:shadow-none p-5">
         <div className="text-center font-semibold">
             <h5 className="text-white text-xl font-bold mb-5 dark:text-white-light">Rating</h5>
             <p className="text-white mb-5 text-base">(4.3)</p>
-            <div className="flex justify-center items-center gap-1 text-[#e2a03f]">
+            <div className="flex justify-center items-center gap-1 text-warning">
                 <svg>...</svg>
                 <svg>...</svg>
                 <svg>...</svg>
@@ -404,7 +404,7 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+                        <div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
                             <div className="flex justify-between mb-5">
                                 <h6 className="text-black font-semibold text-base dark:text-white-light">Placed Order</h6>
                                 <span className="badge bg-primary/10 text-primary py-1.5 dark:bg-primary dark:text-white">IN PROGRESS</span>
@@ -439,7 +439,7 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-<div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
+<div className="max-w-[24rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none p-5">
     <div className="flex justify-between mb-5">
         <h6 className="text-black font-semibold text-base dark:text-white-light">Placed Order</h6>
         <span className="badge bg-primary/10 text-primary py-1.5 dark:bg-primary dark:text-white">IN PROGRESS</span>
@@ -486,15 +486,15 @@ const Cards = () => {
                         </button>
                     </div>
                     <div className="mb-5 flex items-center justify-center">
-                        <div className="max-w-[22rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+                        <div className="max-w-88 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
                             <div className="py-7 px-6">
                                 <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[260px] overflow-hidden">
                                     <img src="/assets/images/profile-28.jpeg" alt="profile" className="w-full h-full object-cover" />
                                 </div>
                                 <p className="text-primary text-xs mb-1.5 font-bold">25 Sep 2020</p>
-                                <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
+                                <h5 className="text-dark text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
                                 <p className="text-white-dark ">Vestibulum vestibulum tortor ut eros tincidunt, ut rutrum elit volutpat.</p>
-                                <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-[1px] before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
+                                <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-px before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
                                     <div className="flex items-center font-semibold">
                                         <div className="w-9 h-9 rounded-full overflow-hidden inline-block ltr:mr-2 rtl:ml-2.5">
                                             <span className="flex w-full h-full items-center justify-center bg-[#515365] text-white-light shrink-0">AG</span>
@@ -519,15 +519,15 @@ const Cards = () => {
                         <CodeHighlight>
                             <pre className="language-xml">
                                 {`<div className="mb-5 flex items-center justify-center">
-    <div className="max-w-[22rem] w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
+    <div className="max-w-88 w-full bg-white shadow-[4px_6px_10px_-3px_#bfc9d4] rounded-sm border border-white-light dark:border-[#1b2e4b] dark:bg-[#191e3a] dark:shadow-none">
         <div className="py-7 px-6">
             <div className="-mt-7 mb-7 -mx-6 rounded-tl rounded-tr h-[260px] overflow-hidden">
                 <img src="/assets/images/profile-28.jpeg" alt="profile" className="w-full h-full object-cover" />
             </div>
             <p className="text-primary text-xs mb-1.5 font-bold">25 Sep 2020</p>
-            <h5 className="text-[#3b3f5c] text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
+            <h5 className="text-dark text-[15px] font-bold mb-4 dark:text-white-light">How to Start a Blog in 5 Easy Steps.</h5>
             <p className="text-white-dark ">Vestibulum vestibulum tortor ut eros tincidunt, ut rutrum elit volutpat.</p>
-            <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-[1px] before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
+            <div className="relative flex justify-between mt-6 pt-4 before:w-[250px] before:h-px before:bg-white-light before:inset-x-0 before:top-0 before:absolute before:mx-auto dark:before:bg-[#1b2e4b]">
                 <div className="flex items-center font-semibold">
                     <div className="w-9 h-9 rounded-full overflow-hidden inline-block ltr:mr-2 rtl:ml-2.5">
                         <span className="flex w-full h-full items-center justify-center bg-[#515365] text-white-light">AG</span>

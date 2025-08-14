@@ -627,7 +627,7 @@ const ColumnChooser = () => {
                                         </>
                                     }
                                 >
-                                    <ul className="!min-w-[140px]">
+                                    <ul className="min-w-[140px]!">
                                         {cols.map((col, i) => {
                                             return (
                                                 <li

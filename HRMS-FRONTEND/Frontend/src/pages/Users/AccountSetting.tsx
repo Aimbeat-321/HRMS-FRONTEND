@@ -42,7 +42,7 @@ const AccountSetting = () => {
                         <li className="inline-block">
                             <button
                                 onClick={() => toggleTabs('home')}
-                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'home' ? '!border-primary text-primary' : ''}`}
+                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'home' ? 'border-primary! text-primary' : ''}`}
                             >
                                 <IconHome />
                                 Home
@@ -51,7 +51,7 @@ const AccountSetting = () => {
                         <li className="inline-block">
                             <button
                                 onClick={() => toggleTabs('payment-details')}
-                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'payment-details' ? '!border-primary text-primary' : ''}`}
+                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'payment-details' ? 'border-primary! text-primary' : ''}`}
                             >
                                 <IconDollarSignCircle />
                                 Payment Details
@@ -60,7 +60,7 @@ const AccountSetting = () => {
                         <li className="inline-block">
                             <button
                                 onClick={() => toggleTabs('preferences')}
-                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'preferences' ? '!border-primary text-primary' : ''}`}
+                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'preferences' ? 'border-primary! text-primary' : ''}`}
                             >
                                 <IconUser className="w-5 h-5" />
                                 Preferences
@@ -69,7 +69,7 @@ const AccountSetting = () => {
                         <li className="inline-block">
                             <button
                                 onClick={() => toggleTabs('danger-zone')}
-                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'danger-zone' ? '!border-primary text-primary' : ''}`}
+                                className={`flex gap-2 p-4 border-b border-transparent hover:border-primary hover:text-primary ${tabs === 'danger-zone' ? 'border-primary! text-primary' : ''}`}
                             >
                                 <IconPhone />
                                 Danger Zone
@@ -82,7 +82,7 @@ const AccountSetting = () => {
                         <form className="border border-[#ebedf2] dark:border-[#191e3a] rounded-md p-4 mb-5 bg-white dark:bg-black">
                             <h6 className="text-lg font-bold mb-5">General Information</h6>
                             <div className="flex flex-col sm:flex-row">
-                                <div className="ltr:sm:mr-4 rtl:sm:ml-4 w-full sm:w-2/12 mb-5">
+                                <div className="sm:ltr:mr-4 sm:rtl:ml-4 w-full sm:w-2/12 mb-5">
                                     <img src="/assets//images/profile-34.jpeg" alt="img" className="w-20 h-20 md:w-32 md:h-32 rounded-full object-cover mx-auto" />
                                 </div>
                                 <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -145,25 +145,25 @@ const AccountSetting = () => {
                             <h6 className="text-lg font-bold mb-5">Social</h6>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div className="flex">
-                                    <div className="bg-[#eee] flex justify-center items-center rounded px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
+                                    <div className="bg-[#eee] flex justify-center items-center rounded-sm px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
                                         <IconLinkedin className="w-5 h-5" />
                                     </div>
                                     <input type="text" placeholder="jimmy_turner" className="form-input" />
                                 </div>
                                 <div className="flex">
-                                    <div className="bg-[#eee] flex justify-center items-center rounded px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
+                                    <div className="bg-[#eee] flex justify-center items-center rounded-sm px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
                                         <IconTwitter className="w-5 h-5" />
                                     </div>
                                     <input type="text" placeholder="jimmy_turner" className="form-input" />
                                 </div>
                                 <div className="flex">
-                                    <div className="bg-[#eee] flex justify-center items-center rounded px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
+                                    <div className="bg-[#eee] flex justify-center items-center rounded-sm px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
                                         <IconFacebook className="w-5 h-5" />
                                     </div>
                                     <input type="text" placeholder="jimmy_turner" className="form-input" />
                                 </div>
                                 <div className="flex">
-                                    <div className="bg-[#eee] flex justify-center items-center rounded px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
+                                    <div className="bg-[#eee] flex justify-center items-center rounded-sm px-3 font-semibold dark:bg-[#1b2e4b] ltr:mr-2 rtl:ml-2">
                                         <IconGithub />
                                     </div>
                                     <input type="text" placeholder="jimmy_turner" className="form-input" />

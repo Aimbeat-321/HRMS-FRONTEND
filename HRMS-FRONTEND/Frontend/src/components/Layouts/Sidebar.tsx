@@ -88,7 +88,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'home' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('home')}>
                                     <div className="flex items-center">
-                                        <IconMenuDashboard className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuDashboard className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Home')}</span>
                                     </div>
                                     <div className={currentMenu !== 'home' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -115,7 +115,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'organization' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('organization')}>
                                     <div className="flex items-center">
-                                        <IconMenuUsers className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuUsers className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Organization')}</span>
                                     </div>
                                     <div className={currentMenu !== 'organization' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -141,7 +141,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'people' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('people')}>
                                     <div className="flex items-center">
-                                        <IconMenuContacts className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuContacts className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('People')}</span>
                                     </div>
                                     <div className={currentMenu !== 'people' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -170,7 +170,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'attendance' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('attendance')}>
                                     <div className="flex items-center">
-                                        <IconMenuCalendar className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuCalendar className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Attendance & Time')}</span>
                                     </div>
                                     <div className={currentMenu !== 'attendance' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -211,7 +211,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'leave' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('leave')}>
                                     <div className="flex items-center">
-                                        <IconMenuCalendar className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuCalendar className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Leave')}</span>
                                     </div>
                                     <div className={currentMenu !== 'leave' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -240,7 +240,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'recruitment' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('recruitment')}>
                                     <div className="flex items-center">
-                                        <IconMenuScrumboard className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuScrumboard className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Recruitment')}</span>
                                     </div>
                                     <div className={currentMenu !== 'recruitment' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -269,7 +269,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'onboarding' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('onboarding')}>
                                     <div className="flex items-center">
-                                        <IconMenuNotes className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuNotes className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Onboarding')}</span>
                                     </div>
                                     <div className={currentMenu !== 'onboarding' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -298,7 +298,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'docs' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('docs')}>
                                     <div className="flex items-center">
-                                        <IconMenuDocumentation className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuDocumentation className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Compliance & Documents')}</span>
                                     </div>
                                     <div className={currentMenu !== 'docs' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -324,7 +324,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'performance' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('performance')}>
                                     <div className="flex items-center">
-                                        <IconMenuWidgets className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuWidgets className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Performance')}</span>
                                     </div>
                                     <div className={currentMenu !== 'performance' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -353,7 +353,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'reimbursements' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('reimbursements')}>
                                     <div className="flex items-center">
-                                        <IconMenuInvoice className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuInvoice className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Reimbursements')}</span>
                                     </div>
                                     <div className={currentMenu !== 'reimbursements' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -379,7 +379,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'payroll' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('payroll')}>
                                     <div className="flex items-center">
-                                        <IconMenuInvoice className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuInvoice className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Payroll & Compensation')}</span>
                                     </div>
                                     <div className={currentMenu !== 'payroll' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -408,7 +408,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'learning' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('learning')}>
                                     <div className="flex items-center">
-                                        <IconMenuNotes className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuNotes className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Learning, Skills & Career')}</span>
                                     </div>
                                     <div className={currentMenu !== 'learning' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -434,7 +434,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'admin-assets' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('admin-assets')}>
                                     <div className="flex items-center">
-                                        <IconMenuTables className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuTables className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Assets & Vendors')}</span>
                                     </div>
                                     <div className={currentMenu !== 'admin-assets' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -457,7 +457,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'rooms' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('rooms')}>
                                     <div className="flex items-center">
-                                        <IconMenuCalendar className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuCalendar className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Facilities')}</span>
                                     </div>
                                     <div className={currentMenu !== 'rooms' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -483,7 +483,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'offboarding' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('offboarding')}>
                                     <div className="flex items-center">
-                                        <IconMenuNotes className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuNotes className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Resignation & Offboarding')}</span>
                                     </div>
                                     <div className={currentMenu !== 'offboarding' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -509,7 +509,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'workflows' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('workflows')}>
                                     <div className="flex items-center">
-                                        <IconMenuForms className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuForms className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Workflows & Notifications')}</span>
                                     </div>
                                     <div className={currentMenu !== 'workflows' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -532,7 +532,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'mobile' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('mobile')}>
                                     <div className="flex items-center">
-                                        <IconMenuForms className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuForms className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Mobile')}</span>
                                     </div>
                                     <div className={currentMenu !== 'mobile' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -558,7 +558,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'integrations' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('integrations')}>
                                     <div className="flex items-center">
-                                        <IconMenuAuthentication className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuAuthentication className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Integrations & IT')}</span>
                                     </div>
                                     <div className={currentMenu !== 'integrations' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -584,7 +584,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'reports' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('reports')}>
                                     <div className="flex items-center">
-                                        <IconMenuWidgets className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuWidgets className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Reporting & Analytics')}</span>
                                     </div>
                                     <div className={currentMenu !== 'reports' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -610,7 +610,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'iam' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('iam')}>
                                     <div className="flex items-center">
-                                        <IconMenuAuthentication className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuAuthentication className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Security & IAM')}</span>
                                     </div>
                                     <div className={currentMenu !== 'iam' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -637,7 +637,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'system' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('system')}>
                                     <div className="flex items-center">
-                                        <IconMenuDocumentation className="group-hover:!text-primary shrink-0" />
+                                        <IconMenuDocumentation className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('System')}</span>
                                     </div>
                                     <div className={currentMenu !== 'system' ? 'rtl:rotate-90 -rotate-90' : ''}>
