@@ -26,7 +26,7 @@ import DarkLogo from "../../assets/WeConnect Logo Dark.png"
 import smallLogo from "../../../public/logo192.png";
 import { GoOrganization } from "react-icons/go";
 import { IoPeopleOutline } from "react-icons/io5";
-import { CiCalendar } from "react-icons/ci";
+import { PiCalendarBlank, PiCalendarMinus } from "react-icons/pi";
 
 
 
@@ -194,7 +194,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'attendance' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('attendance')}>
                                     <div className="flex items-center">
-                                        <CiCalendar className="group-hover:text-primary! shrink-0" />
+                                        <PiCalendarBlank className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Attendance & Time')}</span>
                                     </div>
                                     <div className={currentMenu !== 'attendance' ? 'rtl:rotate-90 -rotate-90' : ''}>
@@ -235,7 +235,7 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'leave' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('leave')}>
                                     <div className="flex items-center">
-                                        <IconMenuCalendar className="group-hover:text-primary! shrink-0" />
+                                        <PiCalendarMinus className="group-hover:text-primary! shrink-0" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Leave')}</span>
                                     </div>
                                     <div className={currentMenu !== 'leave' ? 'rtl:rotate-90 -rotate-90' : ''}>
