@@ -35,13 +35,13 @@
 @import './assets/css/file-upload-preview.css' layer(base);
 
 /* dragndrop*/
-@import './assets/css/dragndrop.css' layer(base);
+@import './assets/css/dragndrop.css';
 
 /* form element*/
-@import './assets/css/form-elements.css' layer(base);
+@import './assets/css/form-elements.css';
 
 /* Select2*/
-@import './assets/css/select2.css' layer(base);
+@import './assets/css/select2.css';
 
 @import 'tailwindcss';
 
@@ -139,10 +139,10 @@
     @apply ltr:ml-0 rtl:mr-0;
   }
   & .sidebar {
-    @apply ltr:-left-[280px] rtl:-right-[280px];
+    @apply ltr:-left-[260px] rtl:-right-[260px];
   }
   &.toggle-sidebar .sidebar {
-    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[280px] lg:rtl:-right-[280px];
+    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[260px] lg:rtl:-right-[260px];
   }
 
   & .nav-item a div:first-child svg {
@@ -261,16 +261,16 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     @apply h-5 w-5 text-black/50 dark:text-white/50;
   }
   .horizontal & {
-    @apply ltr:-left-[280px] rtl:-right-[280px];
+    @apply ltr:-left-[260px] rtl:-right-[260px];
   }
   .horizontal.toggle-sidebar & {
-    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[280px] lg:rtl:-right-[280px];
+    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[260px] lg:rtl:-right-[260px];
   }
   .vertical & {
-    @apply ltr:-left-[280px] rtl:-right-[280px] lg:ltr:left-0 lg:rtl:right-0;
+    @apply ltr:-left-[260px] rtl:-right-[260px] lg:ltr:left-0 lg:rtl:right-0;
   }
   .vertical.toggle-sidebar & {
-    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[280px] lg:rtl:-right-[280px];
+    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[260px] lg:rtl:-right-[260px];
   }
 
   /* Collapsible vertical layouts */
@@ -558,7 +558,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
 
 @utility toggle-sidebar {
   &.horizontal .sidebar {
-    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[280px] lg:rtl:-right-[280px];
+    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[260px] lg:rtl:-right-[260px];
   }
 
   /* Vertical layouts */
@@ -572,19 +572,19 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     @apply ltr:ml-0 rtl:mr-0;
   }
   &.vertical .sidebar {
-    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[280px] lg:rtl:-right-[280px];
+    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[260px] lg:rtl:-right-[260px];
   }
   &.collapsible-vertical .sidebar {
     @apply ltr:left-0 rtl:right-0;
   }
   &.collapsible-vertical .sidebar {
-    @apply lg:w-[280px];
+    @apply lg:w-[260px];
   }
   &.collapsible-vertical .sidebar .nav-item > a {
     @apply w-auto;
   }
   &.collapsible-vertical .main-content {
-    @apply lg:w-[calc(100%-260px)] lg:ltr:ml-[280px] lg:rtl:mr-[280px];
+    @apply lg:w-[calc(100%-260px)] lg:ltr:ml-[260px] lg:rtl:mr-[260px];
   }
   & .collapsible-vertical .sidebar .sub-menu {
     @apply block;
@@ -632,10 +632,10 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     @apply ltr:ml-0 rtl:mr-0;
   }
   & .sidebar {
-    @apply ltr:-left-[280px] rtl:-right-[280px] lg:ltr:left-0 lg:rtl:right-0;
+    @apply ltr:-left-[260px] rtl:-right-[260px] lg:ltr:left-0 lg:rtl:right-0;
   }
   &.toggle-sidebar .sidebar {
-    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[280px] lg:rtl:-right-[280px];
+    @apply ltr:left-0 rtl:right-0 lg:ltr:-left-[260px] lg:rtl:-right-[260px];
   }
 
   &.boxed-layout .sidebar {
@@ -672,19 +672,19 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
 @utility collapsible-vertical {
   /* Collapsible vertical layouts */
   & .sidebar {
-    @apply hover:w-[280px] ltr:-left-[280px] rtl:-right-[280px] lg:w-[70px] lg:ltr:left-0 lg:rtl:right-0;
+    @apply hover:w-[260px] ltr:-left-[260px] rtl:-right-[260px] lg:w-[70px] lg:ltr:left-0 lg:rtl:right-0;
   }
   &.toggle-sidebar .sidebar {
     @apply ltr:left-0 rtl:right-0;
   }
   &.toggle-sidebar .sidebar {
-    @apply lg:w-[280px];
+    @apply lg:w-[260px];
   }
   &.toggle-sidebar .sidebar .nav-item > a {
     @apply w-auto;
   }
   &.toggle-sidebar .main-content {
-    @apply lg:w-[calc(100%-260px)] lg:ltr:ml-[280px] lg:rtl:mr-[280px];
+    @apply lg:w-[calc(100%-260px)] lg:ltr:ml-[260px] lg:rtl:mr-[260px];
   }
 
   & .sidebar .sub-menu {
@@ -896,200 +896,80 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
   @apply border-dark text-dark hover:bg-dark-light dark:hover:bg-dark dark:hover:text-white-light;
 }
 
-@utility form-input {
-  /* Form */
-  @apply w-full rounded-md border border-white-light bg-white px-4 py-2 text-sm font-semibold text-black outline-hidden! focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-dark dark:focus:border-primary;
+    /* Form */
+    .form-input,
+    .form-textarea,
+    .form-select,
+    .form-multiselect {
+        @apply w-full rounded-md border border-white-light bg-white px-4 py-2 text-sm font-semibold text-black !outline-none focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-dark dark:focus:border-primary;
+    }
 
-  .has-error & {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
+    .form-input-lg,
+    .form-textarea-lg,
+    .form-select-lg,
+    .form-multiselect-lg {
+        @apply py-2.5 text-base;
+    }
+    .form-input-sm,
+    .form-textarea-sm,
+    .form-select-sm,
+    .form-multiselect-sm {
+        @apply py-1.5 text-xs;
+    }
+    label {
+        @apply mb-1.5 block font-semibold;
+    }
+    [dir='rtl'] select {
+        background-position: left 0.5rem center;
+    }
 
-  .has-success & {
-    @apply border-success bg-success/8 text-success placeholder-success/70 focus:border-success;
-  }
-}
+    .has-error .form-input,
+    .has-error .form-textarea,
+    .has-error .form-select,
+    .has-error .form-multiselect,
+    .has-error .multiselect__tags {
+        @apply border-danger bg-danger/[0.08] text-danger placeholder-danger/70 focus:border-danger;
+    }
+    .has-error .form-label,
+    .has-error .form-help,
+    .has-error .form-icon,
+    .has-error .multiselect__placeholder {
+        @apply text-danger;
+    }
+    .has-error .multiselect__input {
+        @apply bg-[#F7ECF0] !placeholder-danger/70;
+    }
+    .has-error .multiselect__tags:hover,
+    .has-error .form-checkbox {
+        @apply border-danger;
+    }
 
-@utility form-textarea {
-  @apply w-full rounded-md border border-white-light bg-white px-4 py-2 text-sm font-semibold text-black outline-hidden! focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-dark dark:focus:border-primary;
+    .has-success .form-input,
+    .has-success .form-textarea,
+    .has-success .form-select,
+    .has-success .form-multiselect,
+    .has-success .multiselect__tags {
+        @apply border-success bg-success/[0.08] text-success placeholder-success/70 focus:border-success;
+    }
+    .has-success .form-label,
+    .has-success .form-help,
+    .has-success .form-icon,
+    .has-success .multiselect__placeholder {
+        @apply text-success;
+    }
+    .has-success .multiselect__input {
+        @apply bg-[#F7ECF0] !placeholder-success/70;
+    }
+    .has-success .multiselect__tags:hover {
+        @apply border-success;
+    }
 
-  .has-error & {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-
-  .has-success & {
-    @apply border-success bg-success/8 text-success placeholder-success/70 focus:border-success;
-  }
-}
-
-@utility form-select {
-  @apply w-full rounded-md border border-white-light bg-white px-4 py-2 text-sm font-semibold text-black outline-hidden! focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-dark dark:focus:border-primary;
-
-  .has-error & {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-
-  .has-success & {
-    @apply border-success bg-success/8 text-success placeholder-success/70 focus:border-success;
-  }
-}
-
-@utility form-multiselect {
-  @apply w-full rounded-md border border-white-light bg-white px-4 py-2 text-sm font-semibold text-black outline-hidden! focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-dark dark:focus:border-primary;
-
-  .has-error & {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-
-  .has-success & {
-    @apply border-success bg-success/8 text-success placeholder-success/70 focus:border-success;
-  }
-}
-
-@utility form-input-lg {
-  @apply py-2.5 text-base;
-}
-
-@utility form-textarea-lg {
-  @apply py-2.5 text-base;
-}
-
-@utility form-select-lg {
-  @apply py-2.5 text-base;
-}
-
-@utility form-multiselect-lg {
-  @apply py-2.5 text-base;
-}
-
-@utility form-input-sm {
-  @apply py-1.5 text-xs;
-}
-
-@utility form-textarea-sm {
-  @apply py-1.5 text-xs;
-}
-
-@utility form-select-sm {
-  @apply py-1.5 text-xs;
-}
-
-@utility form-multiselect-sm {
-  @apply py-1.5 text-xs;
-}
-
-@utility has-error {
-  & .form-input {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-
-  & .form-textarea {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-
-  & .form-select {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-
-  & .form-multiselect {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-
-  & .multiselect__tags {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-  & .form-label {
-    @apply text-danger;
-  }
-  & .form-help {
-    @apply text-danger;
-  }
-  & .form-icon {
-    @apply text-danger;
-  }
-  & .multiselect__placeholder {
-    @apply text-danger;
-  }
-  & .multiselect__input {
-    @apply bg-[#F7ECF0] placeholder-danger/70!;
-  }
-  & .multiselect__tags:hover {
-    @apply border-danger;
-  }
-  & .form-checkbox {
-    @apply border-danger;
-  }
-}
-
-@utility multiselect__tags {
-  .has-error & {
-    @apply border-danger bg-danger/8 text-danger placeholder-danger/70 focus:border-danger;
-  }
-  .has-error &:hover {
-    @apply border-danger;
-  }
-
-  .has-success & {
-    @apply border-success bg-success/8 text-success placeholder-success/70 focus:border-success;
-  }
-  .has-success &:hover {
-    @apply border-success;
-  }
-}
-
-@utility form-label {
-  .has-error & {
-    @apply text-danger;
-  }
-  .has-success & {
-    @apply text-success;
-  }
-}
-
-@utility form-help {
-  .has-error & {
-    @apply text-danger;
-  }
-
-  .has-success & {
-    @apply text-success;
-  }
-}
-
-@utility form-icon {
-  .has-error & {
-    @apply text-danger;
-  }
-
-  .has-success & {
-    @apply text-success;
-  }
-}
-
-@utility multiselect__placeholder {
-  .has-error & {
-    @apply text-danger;
-  }
-
-  .has-success & {
-    @apply text-success;
-  }
-}
-
-@utility multiselect__input {
-  .has-error & {
-    @apply bg-[#F7ECF0] placeholder-danger/70!;
-  }
-  .has-success & {
-    @apply bg-[#F7ECF0] placeholder-success/70!;
-  }
-}
-
-@utility form-checkbox {
-  .has-error & {
-    @apply border-danger;
-  }
-  @apply h-5 w-5 cursor-pointer rounded-sm border-2 border-white-light bg-transparent text-primary shadow-none! outline-hidden! ring-0! ring-offset-0! checked:bg-size-[90%_90%] disabled:cursor-not-allowed disabled:bg-[#eee] ltr:mr-1.5 rtl:ml-1.5
+    /* checkbox & radio */
+    .form-radio,
+    .form-checkbox {
+        @apply h-5 w-5 cursor-pointer rounded border-2 border-white-light bg-transparent text-primary !shadow-none !outline-none !ring-0 !ring-offset-0 checked:bg-[length:90%_90%] disabled:cursor-not-allowed disabled:bg-[#eee] ltr:mr-1.5 rtl:ml-1.5
       dark:border-[#253b5c] dark:checked:border-transparent dark:disabled:bg-[#1b2e4b];
+    }
 
   &.outline-primary:checked {
     @apply border-primary bg-transparent;
@@ -1330,7 +1210,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     }
     table thead tr,
     table tfoot tr {
-        @apply border-b-0 bg-[#f6f8fa]!  dark:bg-[#1a2941]!;
+        @apply border-b-0 !bg-[#f6f8fa]  dark:!bg-[#1a2941];
     }
     table thead tr th,
     table tfoot tr th,
@@ -1345,7 +1225,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
         @apply border-b border-white-light/40! dark:border-[#191e3a]!;
     }
 
-    /* code hightlight */
+    /* code highlight */
     pre {
         direction: ltr;
     }
@@ -1519,7 +1399,7 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
   pre.hljs {
     @apply p-6 rounded-md overflow-x-auto bg-[#191e3a]!;
   }
-  /* @font-face {
+  @font-face {
     font-family: 'proxima-regular';
     src:
       url('assets/fonts/fonnts.com-proximasansregular-webfont.woff2')
@@ -1530,38 +1410,29 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     font-style: normal;
   }
 
-  @font-face {
-    font-family: 'proxima-medium';
-    src:
-      url('assets/fonts/fonnts.com-proximasansmedium-webfont.woff2')
-        format('woff2'),
-      url('assets/fonts/fonnts.com-proximasansmedium-webfont.woff')
-        format('woff');
-    font-weight: 500;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "proxima-medium";
+  src: url("assets/fonts/fonnts.com-proximasansmedium-webfont.woff2") format("woff2"),
+       url("assets/fonts/fonnts.com-proximasansmedium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'proxima-semibold';
-    src:
-      url('assets/fonts/fonnts.com-proxima_nova_semibold-webfont.woff2')
-        format('woff2'),
-      url('assets/fonts/fonnts.com-proxima_nova_semibold-webfont.woff')
-        format('woff');
-    font-weight: 600;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("assets/fonts/fonnts.com-proxima_nova_semibold-webfont.woff2") format("woff2"),
+       url("assets/fonts/fonnts.com-proxima_nova_semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'proxima-condensed-bold';
-    src:
-      url('assets/fonts/fonnts.com-proxima_nova_condensed_bold-webfont.woff2')
-        format('woff2'),
-      url('assets/fonts/fonnts.com-proxima_nova_condensed_bold-webfont.woff')
-        format('woff');
-    font-weight: 700;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "proxima-condensed-bold";
+  src: url("assets/fonts/fonnts.com-proxima_nova_condensed_bold-webfont.woff2") format("woff2"),
+       url("assets/fonts/fonnts.com-proxima_nova_condensed_bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 
   @font-face {
     font-family: 'proxima-extrabold';
@@ -1574,130 +1445,81 @@ hover:text-primary hover:before:bg-primary! ltr:before:mr-2 rtl:before:ml-2 dark
     font-style: normal;
   }
 
-@font-face {
-    font-family: 'Proxima Nova Th';
-    src: url('assets/fonts/ProximaNova-Extrabld.woff2') format('woff2'),
-        url('assets/fonts/ProximaNova-Extrabld.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-} */
-
-@font-face {
-    font-family: 'proxima-medium';
-    src: url('assets/fonts/ProximaSansMedium.woff2') format('woff2'),
-        url('assets/fonts/ProximaSansMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+/* CSS Variables for Colors */
+:root {
+  --primary-red: #ef444e;
+  --primary-black: #2b2c2b;
+  --primary-white: #ffffff;
+  --secondary-blue: #446aef;
+  --secondary-yellow: #f7b638;
+  --secondary-green: #5ed790;
+  --secondary-violet: #ac5ade;
+  --secondary-cyan: #62dce4;
+}
+@theme {
+  --color-primary-red: #ef444e;
+  --color-primary-black: #2b2c2b;
+  --color-primary-white: #ffffff;
+  --color-secondary-blue: #446aef;
+  --color-secondary-yellow: #f7b638;
+  --color-secondary-green: #5ed790;
+  --color-secondary-violet: #ac5ade;
+  --color-secondary-cyan: #62dce4;
 }
 
-@font-face {
-    font-family: 'proxima-regular';
-    src: url('assets/fonts/ProximaSansRegular.woff2') format('woff2'),
-        url('assets/fonts/ProximaSansRegular.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'proxima-semibold';
-    src: url('assets/fonts/ProximaNova-Semibold.woff2') format('woff2'),
-        url('assets/fonts/ProximaNova-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Proxima Nova Cn Rg';
-    src: url('assets/fonts/ProximaNovaCond-Bold.woff2') format('woff2'),
-        url('assets/fonts/ProximaNovaCond-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-  /* CSS Variables for Colors */
-  :root {
-    --primary-red: #ef444e;
-    --primary-black: #2b2c2b;
-    --primary-white: #ffffff;
-    --secondary-blue: #446aef;
-    --secondary-yellow: #f7b638;
-    --secondary-green: #5ed790;
-    --secondary-violet: #ac5ade;
-    --secondary-cyan: #62dce4;
-  }
-}
 /* Base styles */
 body {
-  font-family: "proxima-regular", sans-serif;
-  font-size: 14px;
+    font-family: "proxima-regular", sans-serif;
+    font-size: 14px;
 }
 
 /* Buttons */
 .btn-primary {
-    font-family: "proxima-condensed-bold", sans-serif;
-    @apply bg-[var(--primary-red)] text-[var(--primary-white)] rounded-[30px] 
-           min-h-[3.75rem] h-[3.75rem] w-[min(170px,40vw)] py-2.5 px-6 text-base
-           transition-colors duration-100 hover:bg-[#F26971] active:bg-[#D93E47] 
-           disabled:bg-[#808080] 
-           md:min-h-[3rem] md:h-[3rem] md:w-[min(140px,35vw)] md:py-2 md:px-4 md:text-sm
-           sm:min-h-[2.5rem] sm:h-[2.5rem] sm:w-[min(120px,30vw)] sm:py-1.5 sm:px-3 sm:text-xs;
+  font-family: "proxima-condensed-bold", sans-serif;
+  @apply bg-(--primary-red) transition-colors duration-100 
+         hover:bg-[#F26971] active:bg-[#D93E47] disabled:bg-[#808080]
+         rounded-[30px] min-h-[60px] w-[170px] h-[60px]
+         py-[10px] px-[24px] text-(--primary-white);
 }
 
 .btn-secondary {
-    font-family: "proxima-condensed-bold", sans-serif;
-    @apply border border-[var(--primary-red)] text-[var(--primary-red)] rounded-[30px] 
-           min-h-[3.75rem] h-[3.75rem] w-[min(170px,40vw)] py-2.5 px-6 text-base
-           transition-colors duration-100 hover:bg-[#FDECED] active:bg-[#FAC5C8] 
-           disabled:border-[#808080] disabled:text-[#808080] disabled:hover:bg-[var(--primary-white)]
-           md:min-h-[3rem] md:h-[3rem] md:w-[min(140px,35vw)] md:py-2 md:px-4 md:text-sm
-           sm:min-h-[2.5rem] sm:h-[2.5rem] sm:w-[min(120px,30vw)] sm:py-1.5 sm:px-3 sm:text-xs;
+  font-family: "proxima-condensed-bold", sans-serif;
+  @apply border border-(--primary-red) transition-colors duration-100 
+         hover:bg-[#FDECED] active:bg-[#FAC5C8] disabled:border-[#808080] 
+         disabled:text-[#808080] disabled:hover:bg-(--primary-white)
+         rounded-[30px] min-h-[60px] w-[170px] h-[60px]
+         py-[10px] px-[24px] text-(--primary-red);
 }
 
 .btn-tertiary {
-    font-family: "proxima-condensed-bold", sans-serif;
-    @apply text-[var(--primary-red)] hover:text-[#F26971] hover:underline 
-           transition-all duration-100 text-base
-           md:text-sm sm:text-xs;
+  font-family: "proxima-condensed-bold", sans-serif;
+  @apply text-(--primary-red) hover:text-[#F26971] hover:underline 
+         transition-all duration-100;
 }
 
 /* Tags */
 .tags {
-    @apply flex h-[1.25rem] px-2 justify-center items-center gap-2 rounded-[16px] text-[0.625rem]
-           md:h-[1rem] md:px-1.5 md:gap-1.5 md:text-[0.5rem]
-           sm:h-[0.875rem] sm:px-1 sm:gap-1 sm:text-[0.4375rem];
+  @apply flex h-[20px] px-2 justify-center items-center gap-[10px] rounded-[16px] text-[10px];
 }
 
 /* Widgets */
 .widget {
-    font-family: "proxima-condensed-bold", sans-serif;
-    @apply flex justify-center items-center gap-2 px-8 py-2.5 rounded-[30px] text-sm font-medium 
-           transition-colors duration-200
-           md:px-6 md:py-2 md:text-xs md:gap-1.5
-           sm:px-4 sm:py-1.5 sm:text-[0.625rem] sm:gap-1;
+  font-family: "proxima-condensed-bold", sans-serif;
+  @apply flex justify-center items-center gap-[10px] px-16 py-[10px] 
+         rounded-[30px] text-sm font-medium transition-colors duration-200;
 }
 
 /* Avatars */
 .avatar {
-    font-family: "proxima-condensed-bold", sans-serif;
-    @apply flex justify-center items-center gap-2 rounded-full w-[3.75rem] h-[3.75rem] p-4
-           md:w-[3rem] md:h-[3rem] md:p-3 md:gap-1.5
-           sm:w-[2.5rem] sm:h-[2.5rem] sm:p-2 sm:gap-1;
+  font-family: "proxima-condensed-bold", sans-serif;
+  @apply flex justify-center items-center gap-[10px] rounded-full
+         w-[60px] h-[60px] p-[18px];
 }
 
-/* Dashboard Background */
-.dashboard-bg {
-    @apply bg-gray-100;
+.dashboard-bg{
+  @apply bg-gray-100
 }
 
-/* Home Card */
-.home-card {
-    @apply bg-white p-5 rounded-xl shadow-xs border border-gray-200
-           md:p-4 sm:p-3 sm:rounded-lg;
+.home-card{
+  @apply bg-white p-5 rounded-xl  shadow-xs border border-gray-200
 }
