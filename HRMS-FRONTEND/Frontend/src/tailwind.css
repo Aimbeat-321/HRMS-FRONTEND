@@ -78,7 +78,7 @@
 
 @utility dark {
   &body {
-    @apply bg-[#060818];
+    @apply bg-[#060818] ;
   }
 
   .horizontal & .nav-item button div:first-child svg {
