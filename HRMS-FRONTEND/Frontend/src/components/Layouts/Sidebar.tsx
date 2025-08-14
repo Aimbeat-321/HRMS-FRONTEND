@@ -22,9 +22,11 @@ import IconMenuForms from '../Icon/Menu/IconMenuForms';
 import IconMenuWidgets from '../Icon/Menu/IconMenuWidgets';
 import IconMenuAuthentication from '../Icon/Menu/IconMenuAuthentication';
 import Logo from "../../assets/WeConnect Logo.png";
+import smallLogo from "../../../public/logo192.png";
 
 const Sidebar = () => {
     const [currentMenu, setCurrentMenu] = useState<string>('');
+    const [isHovered, setIsHovered] = useState<boolean>(false);
     const themeConfig = useSelector((state: IRootState) => state.themeConfig);
     const semidark = useSelector((state: IRootState) => state.themeConfig.semidark);
     const location = useLocation();
@@ -60,20 +62,33 @@ const Sidebar = () => {
         }
     }, [location, dispatch]);
 
+    const isSidebarExpanded = themeConfig.sidebar && !(window.innerWidth < 1024);
+    const showBigLogo = isSidebarExpanded || (!themeConfig.sidebar && isHovered);
+
     return (
         <div className={semidark ? 'dark' : ''}>
             <nav
-                className={`sidebar fixed min-h-screen h-full top-0 bottom-0 w-[260px] shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] z-50 transition-all duration-300 ${semidark ? 'text-white-dark' : ''}`}
+                className={`sidebar fixed min-h-screen h-full top-0 bottom-0 ${isSidebarExpanded || isHovered ? 'w-[260px]' : 'w-[80px]'} shadow-[5px_0_25px_0_rgba(94,92,154,0.1)] z-50 transition-all duration-300 ${semidark ? 'text-white-dark' : ''}`}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
             >
                 <div className="bg-white dark:bg-black h-full">
                     <div className="flex justify-between items-center px-4 py-3">
-                        {/* Conditionally render the logo based on sidebar state */}
-                        {themeConfig.sidebar && (
-                            <NavLink to="/" className="main-logo flex flex-col items-center shrink-0">
-                                <img className="w-[200px]" src={Logo} alt="logo" />
-                            </NavLink>
-                        )}
-
+                        <NavLink to="/" className="main-logo flex flex-col items-center shrink-0">
+                            <div className="h-12 flex items-center justify-center">
+                                <img
+                                    src={Logo}
+                                    alt="logo"
+                                    className={`absolute left-8 transition-opacity duration-200 ease-in-out ${showBigLogo ? 'opacity-100' : 'opacity-0'}`}
+                                    style={{ width: '200px' }}
+                                />
+                                <img
+                                    src={smallLogo}
+                                    alt="small-logo"
+                                    className={`absolute left-4 w-[32px] transition-opacity duration-200 ease-in-out ${showBigLogo ? 'opacity-0' : 'opacity-100'}`}
+                                />
+                            </div>
+                        </NavLink>
                         <button
                             type="button"
                             className="collapse-icon w-8 h-8 rounded-full flex items-center hover:bg-gray-500/10 dark:hover:bg-dark-light/10 dark:text-white-light transition duration-300 rtl:rotate-180"
