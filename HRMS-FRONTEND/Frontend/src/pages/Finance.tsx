@@ -15,13 +15,23 @@ import IconTether from '../components/Icon/IconTether';
 import IconSolana from '../components/Icon/IconSolana';
 import IconCircleCheck from '../components/Icon/IconCircleCheck';
 import IconInfoCircle from '../components/Icon/IconInfoCircle';
-
+import DashCard from '../components/DashCard';
+import { FaUsers, FaDollarSign, FaChartLine, FaTasks } from 'react-icons/fa';
+import DashProfileCard from '../components/DashProfileCard';
+import WorkingFormatChart from '../components/WorkingFormatChart';
 const Finance = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(setPageTitle('Finance'));
     });
     //bitcoinoption
+    const fakeProfile = {
+    imgUrl: "https://randomuser.me/api/portraits/men/75.jpg",
+    firstName: "John",
+    lastName: "Doe",
+    emailAddress: "john.doe@example.com",
+    position: "Software Engineer",
+  };
     const bitcoin: any = {
         series: [
             {
@@ -403,7 +413,7 @@ const Finance = () => {
             </ul>
             <div className="pt-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-6 text-white">
-                    <div className="panel bg-gradient-to-r from-cyan-500 to-cyan-400">
+                    {/* <div className="panel bg-gradient-to-r from-cyan-500 to-cyan-400">
                         <div className="flex justify-between">
                             <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Users Visit</div>
                             <div className="dropdown">
@@ -432,171 +442,27 @@ const Finance = () => {
                             <IconEye className="ltr:mr-2 rtl:ml-2 shrink-0" />
                             Last Week 44,700
                         </div>
-                    </div>
+                    </div> */}
+                    <DashCard icon={<FaUsers />} title="Total Employees" value="1,245" percentage="5.2" subText="last month" active />
 
-                    {/* Sessions */}
-                    <div className="panel bg-gradient-to-r from-violet-500 to-violet-400">
-                        <div className="flex justify-between">
-                            <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Sessions</div>
-                            <div className="dropdown">
-                                <Dropdown
-                                    offset={[0, 5]}
-                                    placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
-                                    btnClassName="hover:opacity-80"
-                                    button={<IconHorizontalDots className="hover:opacity-80 opacity-70" />}
-                                >
-                                    <ul className="text-black dark:text-white-dark">
-                                        <li>
-                                            <button type="button">View Report</button>
-                                        </li>
-                                        <li>
-                                            <button type="button">Edit Report</button>
-                                        </li>
-                                    </ul>
-                                </Dropdown>
-                            </div>
-                        </div>
-                        <div className="flex items-center mt-5">
-                            <div className="text-3xl font-bold ltr:mr-3 rtl:ml-3"> 74,137 </div>
-                            <div className="badge bg-white/30">- 2.35% </div>
-                        </div>
-                        <div className="flex items-center font-semibold mt-5">
-                            <IconEye className="ltr:mr-2 rtl:ml-2 shrink-0" />
-                            Last Week 84,709
-                        </div>
-                    </div>
+                    <DashCard icon={<FaDollarSign />} title="Monthly Revenue" value="$87,500" percentage="3.1" subText="growth" />
 
-                    {/*  Time On-Site */}
-                    <div className="panel bg-gradient-to-r from-blue-500 to-blue-400">
-                        <div className="flex justify-between">
-                            <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Time On-Site</div>
-                            <div className="dropdown">
-                                <Dropdown
-                                    offset={[0, 5]}
-                                    placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
-                                    btnClassName="hover:opacity-80"
-                                    button={<IconHorizontalDots className="hover:opacity-80 opacity-70" />}
-                                >
-                                    <ul className="text-black dark:text-white-dark">
-                                        <li>
-                                            <button type="button">View Report</button>
-                                        </li>
-                                        <li>
-                                            <button type="button">Edit Report</button>
-                                        </li>
-                                    </ul>
-                                </Dropdown>
-                            </div>
-                        </div>
-                        <div className="flex items-center mt-5">
-                            <div className="text-3xl font-bold ltr:mr-3 rtl:ml-3"> 38,085 </div>
-                            <div className="badge bg-white/30">+ 1.35% </div>
-                        </div>
-                        <div className="flex items-center font-semibold mt-5">
-                            <IconEye className="ltr:mr-2 rtl:ml-2 shrink-0" />
-                            Last Week 37,894
-                        </div>
-                    </div>
+                    <DashCard icon={<FaChartLine />} title="Active Projects" value="48" percentage="7.8" subText="increase" />
 
-                    {/* Bounce Rate */}
-                    <div className="panel bg-gradient-to-r from-fuchsia-500 to-fuchsia-400">
-                        <div className="flex justify-between">
-                            <div className="ltr:mr-1 rtl:ml-1 text-md font-semibold">Bounce Rate</div>
-                            <div className="dropdown">
-                                <Dropdown
-                                    offset={[0, 5]}
-                                    placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
-                                    btnClassName="hover:opacity-80"
-                                    button={<IconHorizontalDots className="hover:opacity-80 opacity-70" />}
-                                >
-                                    <ul className="text-black dark:text-white-dark">
-                                        <li>
-                                            <button type="button">View Report</button>
-                                        </li>
-                                        <li>
-                                            <button type="button">Edit Report</button>
-                                        </li>
-                                    </ul>
-                                </Dropdown>
-                            </div>
-                        </div>
-                        <div className="flex items-center mt-5">
-                            <div className="text-3xl font-bold ltr:mr-3 rtl:ml-3"> 49.10% </div>
-                            <div className="badge bg-white/30">- 0.35% </div>
-                        </div>
-                        <div className="flex items-center font-semibold mt-5">
-                            <IconEye className="ltr:mr-2 rtl:ml-2 shrink-0" />
-                            Last Week 50.01%
-                        </div>
-                    </div>
+                    <DashCard icon={<FaTasks />} title="Tasks Completed" value="3,287" percentage="12.4" subText="from last week" active />
                 </div>
 
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
                     {/*  Favorites  */}
-                    <div>
-                        <div className="flex items-center mb-5 font-bold">
-                            <span className="text-lg">Favorites</span>
-                            <button type="button" className="ltr:ml-auto rtl:mr-auto text-primary hover:text-black dark:hover:text-white-dark">
-                                See All
-                            </button>
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:mb-5">
-                            {/*  Bitcoin  */}
-                            <div className="panel">
-                                <div className="flex items-center font-semibold mb-5">
-                                    <div className="shrink-0 w-10 h-10 rounded-full grid place-content-center">
-                                        <IconBitcoin />
-                                    </div>
-                                    <div className="ltr:ml-2 rtl:mr-2">
-                                        <h6 className="text-dark dark:text-white-light">BTC</h6>
-                                        <p className="text-white-dark text-xs">Bitcoin</p>
-                                    </div>
-                                </div>
-                                <div className="mb-5 overflow-hidden">
-                                    <ReactApexChart series={bitcoin.series} options={bitcoin.options} type="line" height={45} />
-                                </div>
-                                <div className="flex justify-between items-center font-bold text-base">
-                                    $20,000 <span className="text-success font-normal text-sm">+0.25%</span>
-                                </div>
-                            </div>
-                            {/*  Ethereum*/}
-                            <div className="panel">
-                                <div className="flex items-center font-semibold mb-5">
-                                    <div className="shrink-0 w-10 h-10 bg-warning rounded-full grid place-content-center p-2">
-                                        <IconEthereum />
-                                    </div>
-                                    <div className="ltr:ml-2 rtl:mr-2">
-                                        <h6 className="text-dark dark:text-white-light">ETH</h6>
-                                        <p className="text-white-dark text-xs">Ethereum</p>
-                                    </div>
-                                </div>
-                                <div className="mb-5 overflow-hidden">
-                                    <ReactApexChart series={ethereum.series} options={ethereum.options} type="line" height={45} />
-                                </div>
-                                <div className="flex justify-between items-center font-bold text-base">
-                                    $21,000 <span className="text-danger font-normal text-sm">-1.25%</span>
-                                </div>
-                            </div>
-                            {/*  Litecoin*/}
-                            <div className="panel">
-                                <div className="flex items-center font-semibold mb-5">
-                                    <div className="shrink-0 w-10 h-10 rounded-full grid place-content-center">
-                                        <IconLitecoin />
-                                    </div>
-                                    <div className="ltr:ml-2 rtl:mr-2">
-                                        <h6 className="text-dark dark:text-white-light">LTC</h6>
-                                        <p className="text-white-dark text-xs">Litecoin</p>
-                                    </div>
-                                </div>
-                                <div className="mb-5 overflow-hidden">
-                                    <ReactApexChart series={litecoin.series} options={litecoin.options} type="line" height={45} />
-                                </div>
-                                <div className="flex justify-between items-center font-bold text-base">
-                                    $11,657 <span className="text-success font-normal text-sm">+0.25%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                       
+      <DashProfileCard
+        imgUrl={fakeProfile.imgUrl}
+        firstName={fakeProfile.firstName}
+        lastName={fakeProfile.lastName}
+        emailAddress={fakeProfile.emailAddress}
+        position={fakeProfile.position}
+      />
+   <WorkingFormatChart />
                     {/*  Prices  */}
                     <div>
                         <div className="flex items-center mb-5 font-bold">
