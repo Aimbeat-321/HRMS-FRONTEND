@@ -203,7 +203,7 @@ const onChange = (imageList: ImageListType, addUpdateIndex: number[] | undefined
                                                         >
                                                             <IconX className="w-3 h-3"/>
                                                         </button>
-                                                        <img src={image.dataURL} alt="img" className="object-cover shadow rounded w-full !max-h-48" />
+                                                        <img src={image.dataURL} alt="img" className="object-cover shadow-sm rounded-sm w-full max-h-48!" />
                                                     </div>
                                                 ))}
                                             </div>
@@ -261,7 +261,7 @@ const onChange2 = (imageList: ImageListType, addUpdateIndex: number[] | undefine
                             >
                                 <svg>...</svg>
                             </button>
-                            <img src={image.dataURL} alt="img" className="object-cover shadow rounded w-full !max-h-48" />
+                            <img src={image.dataURL} alt="img" className="object-cover shadow-sm rounded-sm w-full max-h-48!" />
                         </div>
                     ))}
                 </div>

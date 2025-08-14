@@ -31,7 +31,7 @@ const Faq = () => {
 
     return (
         <div>
-            <div className="relative rounded-t-md bg-primary-light bg-[url('/assets/images/knowledge/pattern.png')] bg-contain bg-left-top bg-no-repeat px-5 py-10 dark:bg-black md:px-10">
+            <div className="relative rounded-t-md bg-primary-light bg-[url('/assets/images/knowledge/pattern.png')] bg-contain bg-top-left bg-no-repeat px-5 py-10 dark:bg-black md:px-10">
                 <div className="absolute -bottom-1 -end-6 hidden text-[#DBE7FF] rtl:rotate-y-180 dark:text-[#1B2E4B] lg:block xl:end-0">
                     <img src={isDark ? '/assets/images/faq/faq-dark.svg' : '/assets/images/faq/faq-light.svg'} alt="faqs" className="w-56 object-cover xl:w-80" />
                 </div>
@@ -133,7 +133,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 1 ? null : 1)}
                             >
                                 <span>How to install VRISTO Admin</span>
@@ -161,7 +161,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 2 ? null : 2)}
                             >
                                 <span> Where can I subscribe to your newsletter?</span>
@@ -189,7 +189,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 3 ? null : 3)}
                             >
                                 <span>How to install VRISTO Admin</span>
@@ -217,7 +217,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active1 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active1 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive1(active1 === 5 ? null : 5)}
                             >
                                 <span>How to install VRISTO Admin</span>
@@ -250,7 +250,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 1 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 1 ? null : 1)}
                             >
                                 <span>How to use Browser Sync</span>
@@ -278,7 +278,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 2 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 2 ? null : 2)}
                             >
                                 <span> Sidebar not rendering CSS</span>
@@ -306,7 +306,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 3 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 3 ? null : 3)}
                             >
                                 <span>Connect with us Personally</span>
@@ -334,7 +334,7 @@ const Faq = () => {
                         <div>
                             <div
                                 className={`flex cursor-pointer items-center justify-between gap-10 px-2.5 py-2 text-base font-semibold hover:bg-primary-light hover:text-primary dark:text-white dark:hover:bg-[#1B2E4B] dark:hover:text-primary
-                            ${active2 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] !text-primary' : ''}`}
+                            ${active2 === 5 ? 'bg-primary-light dark:bg-[#1B2E4B] text-primary!' : ''}`}
                                 onClick={() => setActive2(active2 === 5 ? null : 5)}
                             >
                                 <span>Compilation Issue</span>

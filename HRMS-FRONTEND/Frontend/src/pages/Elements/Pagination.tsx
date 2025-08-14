@@ -55,7 +55,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         First
                                     </button>
@@ -63,7 +63,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         Prev
                                     </button>
@@ -71,7 +71,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         1
                                     </button>
@@ -79,7 +79,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
                                     >
                                         2
                                     </button>
@@ -87,7 +87,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         3
                                     </button>
@@ -95,7 +95,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         Next
                                     </button>
@@ -103,7 +103,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         Last
                                     </button>
@@ -113,7 +113,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         Prev
                                     </button>
@@ -121,7 +121,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         1
                                     </button>
@@ -129,7 +129,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
                                     >
                                         2
                                     </button>
@@ -137,7 +137,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         3
                                     </button>
@@ -145,7 +145,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
                                     >
                                         Next
                                     </button>
@@ -159,7 +159,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             First
         </button>
@@ -167,7 +167,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             Prev
         </button>
@@ -175,7 +175,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             1
         </button>
@@ -183,7 +183,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
         >
             2
         </button>
@@ -191,7 +191,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             3
         </button>
@@ -199,7 +199,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             Next
         </button>
@@ -207,7 +207,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             Last
         </button>
@@ -218,7 +218,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             Prev
         </button>
@@ -226,7 +226,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             1
         </button>
@@ -234,7 +234,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-primary border-2 border-primary dark:border-primary dark:text-white-light"
         >
             2
         </button>
@@ -242,7 +242,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             3
         </button>
@@ -250,7 +250,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition text-dark hover:text-primary border-2 border-white-light dark:border-[#191e3a] hover:border-primary dark:hover:border-primary dark:text-white-light"
         >
             Next
         </button>
@@ -281,7 +281,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         First
                                     </button>
@@ -289,7 +289,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         Prev
                                     </button>
@@ -297,20 +297,20 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         1
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
                                         2
                                     </button>
                                 </li>
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         3
                                     </button>
@@ -318,7 +318,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         Next
                                     </button>
@@ -326,7 +326,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         Last
                                     </button>
@@ -336,7 +336,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         Prev
                                     </button>
@@ -344,20 +344,20 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         1
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
                                         2
                                     </button>
                                 </li>
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         3
                                     </button>
@@ -365,7 +365,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         Next
                                     </button>
@@ -379,7 +379,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             First
         </button>
@@ -387,7 +387,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             Prev
         </button>
@@ -395,20 +395,20 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             1
         </button>
     </li>
     <li>
-        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
             2
         </button>
     </li>
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             3
         </button>
@@ -416,7 +416,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             Next
         </button>
@@ -424,7 +424,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             Last
         </button>
@@ -434,7 +434,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             Prev
         </button>
@@ -442,20 +442,20 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             1
         </button>
     </li>
     <li>
-        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
             2
         </button>
     </li>
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             3
         </button>
@@ -463,7 +463,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             Next
         </button>
@@ -494,7 +494,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         <IconCaretsDown className="rotate-90 rtl:-rotate-90" />
                                     </button>
@@ -502,7 +502,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         <IconCaretDown className="w-5 h-5 rotate-90 rtl:-rotate-90" />
                                     </button>
@@ -510,20 +510,20 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         1
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
                                         2
                                     </button>
                                 </li>
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         3
                                     </button>
@@ -531,7 +531,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         <IconCaretDown className="w-5 h-5 -rotate-90 rtl:rotate-90" />
                                     </button>
@@ -539,7 +539,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         <IconCaretsDown className="-rotate-90 rtl:rotate-90" />
                                     </button>
@@ -549,7 +549,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         <IconCaretDown className="w-5 h-5 rotate-90 rtl:-rotate-90" />
                                     </button>
@@ -557,20 +557,20 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         1
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+                                    <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
                                         2
                                     </button>
                                 </li>
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         3
                                     </button>
@@ -578,7 +578,7 @@ const Pagination = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+                                        className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
                                     >
                                         <IconCaretDown className="w-5 h-5 -rotate-90 rtl:rotate-90" />
                                     </button>
@@ -592,7 +592,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             <svg>...</svg>
         </button>
@@ -600,7 +600,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             <svg>...</svg>
         </button>
@@ -608,20 +608,20 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             1
         </button>
     </li>
     <li>
-        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
             2
         </button>
     </li>
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             3
         </button>
@@ -629,7 +629,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             <svg>...</svg>
         </button>
@@ -637,7 +637,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             <svg>...</svg>
         </button>
@@ -647,7 +647,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             <svg>...</svg>
         </button>
@@ -655,20 +655,20 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             1
         </button>
     </li>
     <li>
-        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-primary text-white dark:text-white-light dark:bg-primary">
+        <button type="button" className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-primary text-white dark:text-white-light dark:bg-primary">
             2
         </button>
     </li>
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             3
         </button>
@@ -676,7 +676,7 @@ const Pagination = () => {
     <li>
         <button
             type="button"
-            className="flex justify-center font-semibold px-3.5 py-2 rounded transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
+            className="flex justify-center font-semibold px-3.5 py-2 rounded-sm transition bg-white-light text-dark hover:text-white hover:bg-primary dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary"
         >
             <svg>...</svg>
         </button>

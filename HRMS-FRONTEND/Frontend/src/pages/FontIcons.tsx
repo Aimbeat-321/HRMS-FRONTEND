@@ -182,7 +182,7 @@ const FontIcons = () => {
                         <p className="mb-5">
                             Solar is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and usability.
                         </p>
-                        <div className="mb-5 inline-block rounded bg-[#009688]/[.26] py-1 px-2 text-base text-[#009688]">Line Duotone</div>
+                        <div className="mb-5 inline-block rounded-sm bg-[#009688]/26 py-1 px-2 text-base text-[#009688]">Line Duotone</div>
                         <div className="flex items-center flex-wrap gap-10 mb-5">
                             <div className="grid place-content-center w-14 h-14 border border-white-dark/20 dark:border-[#191e3a] rounded-md">
                                 <IconAirplay className="w-6 h-6" />
@@ -566,7 +566,7 @@ const FontIcons = () => {
                                 <IconZipFile className="w-6 h-6" />
                             </div>
                         </div>
-                        <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base mb-5">Bold Duotone</div>
+                        <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base mb-5">Bold Duotone</div>
                         <div className="flex items-center flex-wrap gap-10 mb-5">
                             <div className="grid place-content-center w-14 h-14 border border-white-dark/20 dark:border-[#191e3a] rounded-md">
                                 <IconMenuApps className="w-6 h-6" />

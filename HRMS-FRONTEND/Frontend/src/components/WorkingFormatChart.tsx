@@ -9,7 +9,7 @@ const data = [
 
 const WorkingFormatChart = () => {
   return (
-    <div className="bg-white rounded-3xl shadow-sm border border-gray-200 p-4 w-full max-w-3xl mx-auto h-auto min-h-[300px] sm:min-h-[330px] md:min-h-[360px]">
+    <div className="bg-white rounded-3xl shadow-xs border border-gray-200 p-4 w-full max-w-3xl mx-auto h-auto min-h-[300px] sm:min-h-[330px] md:min-h-[360px]">
       <div className="flex items-center justify-between mb-4 sm:mb-5">
         <h3 className="text-sm sm:text-base font-semibold text-gray-600">Working Chart</h3>
         <span className="text-xs sm:text-sm text-gray-400">Details</span>

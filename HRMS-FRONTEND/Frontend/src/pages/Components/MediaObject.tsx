@@ -60,7 +60,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -77,7 +77,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -114,7 +114,7 @@ const MediaObject = () => {
                                 </p>
                             </div>
                             <div>
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@ const MediaObject = () => {
             </p>
         </div>
         <div>
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
         </div>
     </div>
 </div>`}
@@ -155,7 +155,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex items-start">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -173,7 +173,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex items-start">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -203,7 +203,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex items-center">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -221,7 +221,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex items-center">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -250,7 +250,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex items-end">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -268,7 +268,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex items-end">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -305,7 +305,7 @@ const MediaObject = () => {
                                 </p>
                             </div>
                             <div>
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
                             </div>
                         </div>
                     </div>
@@ -323,7 +323,7 @@ const MediaObject = () => {
             </p>
         </div>
         <div>
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-16 h-16 rounded-sm" />
         </div>
     </div>
 </div>`}
@@ -346,7 +346,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex mb-5">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -358,7 +358,7 @@ const MediaObject = () => {
                         </div>
                         <div className="flex mb-5">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -370,7 +370,7 @@ const MediaObject = () => {
                         </div>
                         <div className="flex">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -387,7 +387,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex mb-5">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -399,7 +399,7 @@ const MediaObject = () => {
     </div>
     <div className="flex mb-5">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -411,7 +411,7 @@ const MediaObject = () => {
     </div>
     <div className="flex">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -441,7 +441,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -451,7 +451,7 @@ const MediaObject = () => {
                                 </p>
                                 <div className="flex">
                                     <div className="ltr:mr-4 rtl:ml-4">
-                                        <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                        <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                                     </div>
                                     <div className="flex-1">
                                         <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -470,7 +470,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -480,7 +480,7 @@ const MediaObject = () => {
             </p>
             <div className="flex">
                 <div className="ltr:mr-4 rtl:ml-4">
-                    <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                    <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                 </div>
                 <div className="flex-1">
                     <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -512,7 +512,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -546,7 +546,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -593,7 +593,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -630,7 +630,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">Heading</h4>
@@ -680,7 +680,7 @@ const MediaObject = () => {
                     <div className="mb-5">
                         <div className="flex">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <h4 className="font-semibold text-lg mb-2 text-primary">
@@ -700,7 +700,7 @@ const MediaObject = () => {
                                 {`<div className="mb-5">
     <div className="flex">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <h4 className="font-semibold text-lg mb-2 text-primary">
@@ -733,7 +733,7 @@ const MediaObject = () => {
                     <div className="mb-5 dropdown">
                         <div className="flex">
                             <div className="ltr:mr-4 rtl:ml-4">
-                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+                                <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
                             </div>
                             <div className="flex-1">
                                 <div className="flex justify-between mb-2">
@@ -745,7 +745,7 @@ const MediaObject = () => {
                                             btnClassName="text-white-dark"
                                             button={<IconHorizontalDots className="opacity-70 text-white-dark" />}
                                         >
-                                            <ul className="!min-w-[130px]">
+                                            <ul className="min-w-[130px]!">
                                                 <li>
                                                     <button type="button">
                                                         <IconChatDot className="ltr:mr-1 rtl:ml-1" />
@@ -783,7 +783,7 @@ const MediaObject = () => {
 <div className="mb-5 dropdown">
     <div className="flex">
         <div className="ltr:mr-4 rtl:ml-4">
-            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded" />
+            <img src="/assets/images/profile-5.jpeg" alt="img" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex-1">
             <div className="flex justify-between mb-2">
@@ -797,7 +797,7 @@ const MediaObject = () => {
                             <svg>...</svg>
                         }
                     >
-                        <ul className="!min-w-[130px]">
+                        <ul className="min-w-[130px]!">
                             <li>
                                 <button type="button">
                                     <svg>...</svg>

@@ -579,7 +579,7 @@ const tableData = [
                 <div className="table-responsive mb-5">
                     <table className="table-hover">
                         <thead>
-                            <tr className="!bg-transparent dark:!bg-transparent">
+                            <tr className="bg-transparent! dark:bg-transparent!">
                                 <th>#</th>
                                 <th>Name</th>
                                 <th>Email</th>
@@ -670,7 +670,7 @@ const tableData = [
 <div className="table-responsive mb-5">
     <table className="table-hover">
         <thead>
-            <tr className="!bg-transparent dark:!bg-transparent">
+            <tr className="bg-transparent! dark:bg-transparent!">
                 <th>#</th>
                 <th>Name</th>
                 <th>Email</th>
@@ -1497,7 +1497,7 @@ const tableData = [
                                 <th>Name</th>
                                 <th>Position</th>
                                 <th>Office</th>
-                                <th className="!text-center">Action</th>
+                                <th className="text-center!">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1536,7 +1536,7 @@ const tableData = [
                                 <th>Name</th>
                                 <th>Position</th>
                                 <th>Office</th>
-                                <th className="!text-center">Action</th>
+                                <th className="text-center!">Action</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -1605,7 +1605,7 @@ const tableData = [
                 <th>Name</th>
                 <th>Position</th>
                 <th>Office</th>
-                <th className="!text-center">Action</th>
+                <th className="text-center!">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -1644,7 +1644,7 @@ const tableData = [
                 <th>Name</th>
                 <th>Position</th>
                 <th>Office</th>
-                <th className="!text-center">Action</th>
+                <th className="text-center!">Action</th>
             </tr>
         </tfoot>
     </table>
@@ -1675,7 +1675,7 @@ const tableData = [
                                 <th>Name</th>
                                 <th>Date</th>
                                 <th>Sale</th>
-                                <th className="!text-center">Action</th>
+                                <th className="text-center!">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1788,7 +1788,7 @@ const tableData = [
                 <th>Name</th>
                 <th>Date</th>
                 <th>Sale</th>
-                <th className="!text-center">Action</th>
+                <th className="text-center!">Action</th>
             </tr>
         </thead>
         <tbody>

@@ -195,7 +195,7 @@ const Profile = () => {
                             <h5 className="font-semibold text-lg dark:text-white-light">Summary</h5>
                         </div>
                         <div className="space-y-4">
-                            <div className="border border-[#ebedf2] rounded dark:bg-[#1b2e4b] dark:border-0">
+                            <div className="border border-[#ebedf2] rounded-sm dark:bg-[#1b2e4b] dark:border-0">
                                 <div className="flex items-center justify-between p-4 py-2">
                                     <div className="grid place-content-center w-9 h-9 rounded-md bg-secondary-light dark:bg-secondary text-secondary dark:text-secondary-light">
                                         <IconShoppingBag />
@@ -209,7 +209,7 @@ const Profile = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="border border-[#ebedf2] rounded dark:bg-[#1b2e4b] dark:border-0">
+                            <div className="border border-[#ebedf2] rounded-sm dark:bg-[#1b2e4b] dark:border-0">
                                 <div className="flex items-center justify-between p-4 py-2">
                                     <div className="grid place-content-center w-9 h-9 rounded-md bg-info-light dark:bg-info text-info dark:text-info-light">
                                         <IconTag />
@@ -223,7 +223,7 @@ const Profile = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="border border-[#ebedf2] rounded dark:bg-[#1b2e4b] dark:border-0">
+                            <div className="border border-[#ebedf2] rounded-sm dark:bg-[#1b2e4b] dark:border-0">
                                 <div className="flex items-center justify-between p-4 py-2">
                                     <div className="grid place-content-center w-9 h-9 rounded-md bg-warning-light dark:bg-warning text-warning dark:text-warning-light">
                                         <IconCreditCard />
@@ -257,7 +257,7 @@ const Profile = () => {
                                 <p className="text-info">$25 / month</p>
                             </div>
                             <div className="rounded-full h-2.5 p-0.5 bg-dark-light overflow-hidden mb-5 dark:bg-dark-light/10">
-                                <div className="bg-gradient-to-r from-[#f67062] to-[#fc5296] w-full h-full rounded-full relative" style={{ width: '65%' }}></div>
+                                <div className="bg-linear-to-r from-[#f67062] to-[#fc5296] w-full h-full rounded-full relative" style={{ width: '65%' }}></div>
                             </div>
                         </div>
                     </div>
@@ -281,7 +281,7 @@ const Profile = () => {
                                                 btnClassName="hover:text-primary"
                                                 button={<IconHorizontalDots className="opacity-80 hover:opacity-100" />}
                                             >
-                                                <ul className="!min-w-[150px]">
+                                                <ul className="min-w-[150px]!">
                                                     <li>
                                                         <button type="button">View Invoice</button>
                                                     </li>
@@ -304,7 +304,7 @@ const Profile = () => {
                                         <p className="font-semibold">90%</p>
                                         <div className="dropdown ltr:ml-4 rtl:mr-4">
                                             <Dropdown offset={[0, 5]} placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`} button={<IconHorizontalDots className="opacity-80 hover:opacity-100" />}>
-                                                <ul className="!min-w-[150px]">
+                                                <ul className="min-w-[150px]!">
                                                     <li>
                                                         <button type="button">View Invoice</button>
                                                     </li>
@@ -327,7 +327,7 @@ const Profile = () => {
                                         <p className="font-semibold">90%</p>
                                         <div className="dropdown ltr:ml-4 rtl:mr-4">
                                             <Dropdown offset={[0, 5]} placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`} button={<IconHorizontalDots className="opacity-80 hover:opacity-100" />}>
-                                                <ul className="!min-w-[150px]">
+                                                <ul className="min-w-[150px]!">
                                                     <li>
                                                         <button type="button">View Invoice</button>
                                                     </li>

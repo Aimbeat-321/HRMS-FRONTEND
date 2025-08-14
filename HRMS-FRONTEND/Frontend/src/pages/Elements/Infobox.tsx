@@ -52,7 +52,7 @@ const Infobox = () => {
                         </button>
                     </div>
                     <div className="flex flex-wrap w-full justify-center mb-5">
-                        <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61_/_10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24_/_39%)] p-6">
+                        <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61/10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24/39%)] p-6">
                             <div className="text-primary mb-5">
                                 <IconBox className="w-12 h-12" />
                             </div>
@@ -60,7 +60,7 @@ const Infobox = () => {
                             <p className="text-white-dark text-[15px]  mb-3.5">Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</p>
                             <button type="button" className="text-primary font-semibold hover:underline group">
                                 Discover{' '}
-                                <IconArrowLeft className="ltr:ml-1 rtl:mr-1 inline-block relative transition-all duration-300 group-hover:translate-x-2 rtl:group-hover:-translate-x-2 rtl:rotate-180" />
+                                <IconArrowLeft className="ltr:ml-1 rtl:mr-1 inline-block relative transition-all duration-300 group-hover:translate-x-2 group-hover:rtl:-translate-x-2 rtl:rotate-180" />
                             </button>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const Infobox = () => {
                     {codeArr.includes('code1') && (
                         <CodeHighlight>
                             <pre>{`<div className="flex flex-wrap w-full justify-center mb-5">
-    <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61_/_10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24_/_39%)] p-6">
+    <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61/10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24/39%)] p-6">
         <div className="text-primary mb-5">
             <svg>...</svg>
         </div>
@@ -101,7 +101,7 @@ const Infobox = () => {
                         </button>
                     </div>
                     <div className="flex flex-wrap w-full justify-center mb-5">
-                        <div className="bg-dark border border-gray-500/20 rounded-md shadow-[rgb(31_45_61_/_10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24_/_39%)] p-6 text-center">
+                        <div className="bg-dark border border-gray-500/20 rounded-md shadow-[rgb(31_45_61/10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24/39%)] p-6 text-center">
                             <div className="text-white-light bg1-white-dark w-20 h-20 rounded-full flex items-center justify-center mb-5 mx-auto">
                                 <IconBox className="w-12 h-12" />
                             </div>
@@ -109,14 +109,14 @@ const Infobox = () => {
                             <p className="text-white-light text-[15px]  mb-3.5">Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</p>
                             <button type="button" className="text-info font-semibold hover:underline group">
                                 Discover{' '}
-                                <IconArrowLeft className="ltr:ml-1 rtl:mr-1 inline-block relative transition-all duration-300 group-hover:translate-x-2 rtl:group-hover:-translate-x-2 rtl:rotate-180" />
+                                <IconArrowLeft className="ltr:ml-1 rtl:mr-1 inline-block relative transition-all duration-300 group-hover:translate-x-2 group-hover:rtl:-translate-x-2 rtl:rotate-180" />
                             </button>
                         </div>
                     </div>
                     {codeArr.includes('code2') && (
                         <CodeHighlight>
                             <pre>{`<div className="flex flex-wrap w-full justify-center mb-5">
-    <div className="bg-dark border border-gray-500/20 rounded-md shadow-[rgb(31_45_61_/_10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24_/_39%)] p-6 text-center">
+    <div className="bg-dark border border-gray-500/20 rounded-md shadow-[rgb(31_45_61/10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24/39%)] p-6 text-center">
         <div className="text-white-light bg1-white-dark w-20 h-20 rounded-full flex items-center justify-center mb-5 mx-auto">
             <svg>...</svg>
         </div>
@@ -149,7 +149,7 @@ const Infobox = () => {
                         </button>
                     </div>
                     <div className="flex flex-wrap w-full justify-center mb-5">
-                        <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61_/_10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24_/_39%)] p-6 pt-12 mt-8 relative">
+                        <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61/10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24/39%)] p-6 pt-12 mt-8 relative">
                             <div className="bg-primary absolute text-white-light ltr:left-6 rtl:right-6 -top-8 w-16 h-16 rounded-md flex items-center justify-center mb-5 mx-auto">
                                 <IconBox className="w-12 h-12" />
                             </div>
@@ -157,14 +157,14 @@ const Infobox = () => {
                             <p className="text-white-dark text-[15px]  mb-3.5">Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</p>
                             <button type="button" className="text-primary font-semibold hover:underline group">
                                 Discover{' '}
-                                <IconArrowLeft className="ltr:ml-1 rtl:mr-1 inline-block relative transition-all duration-300 group-hover:translate-x-2 rtl:group-hover:-translate-x-2 rtl:rotate-180" />
+                                <IconArrowLeft className="ltr:ml-1 rtl:mr-1 inline-block relative transition-all duration-300 group-hover:translate-x-2 group-hover:rtl:-translate-x-2 rtl:rotate-180" />
                             </button>
                         </div>
                     </div>
                     {codeArr.includes('code3') && (
                         <CodeHighlight>
                             <pre>{`<div className="flex flex-wrap w-full justify-center mb-5">
-    <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61_/_10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24_/_39%)] p-6 pt-12 mt-8 relative">
+    <div className="border border-gray-500/20 rounded-md shadow-[rgb(31_45_61/10%)_0px_2px_10px_1px] dark:shadow-[0_2px_11px_0_rgb(6_8_24/39%)] p-6 pt-12 mt-8 relative">
         <div className="bg-primary absolute text-white-light ltr:left-6 rtl:right-6 -top-8 w-16 h-16 rounded-md flex items-center justify-center mb-5 mx-auto">
             <svg>...</svg>
         </div>

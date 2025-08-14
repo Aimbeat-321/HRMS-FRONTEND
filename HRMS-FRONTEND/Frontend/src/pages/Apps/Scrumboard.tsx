@@ -376,11 +376,11 @@ const Scrumboard = () => {
             </div>
             {/* add project modal */}
             <Transition appear show={isAddProjectModal} as={Fragment}>
-                <Dialog as="div" open={isAddProjectModal} onClose={() => setIsAddProjectModal(false)} className="relative z-[51]">
+                <Dialog as="div" open={isAddProjectModal} onClose={() => setIsAddProjectModal(false)} className="relative z-51">
                     <TransitionChild as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
                         <div className="fixed inset-0 bg-[black]/60" />
                     </TransitionChild>
-                    <div className="fixed inset-0 z-[999] px-4 overflow-y-auto">
+                    <div className="fixed inset-0 z-999 px-4 overflow-y-auto">
                         <div className="flex items-center justify-center min-h-screen">
                             <TransitionChild
                                 as={Fragment}
@@ -395,7 +395,7 @@ const Scrumboard = () => {
                                     <button
                                         type="button"
                                         onClick={() => setIsAddProjectModal(false)}
-                                        className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none"
+                                        className="absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-hidden"
                                     >
                                         <IconX />
                                     </button>
@@ -433,7 +433,7 @@ const Scrumboard = () => {
                     <TransitionChild as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
                         <div className="fixed inset-0 bg-[black]/60" />
                     </TransitionChild>
-                    <div className="fixed inset-0 z-[999] overflow-y-auto">
+                    <div className="fixed inset-0 z-999 overflow-y-auto">
                         <div className="flex items-center justify-center min-h-screen px-4">
                             <DialogPanel className="panel border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg text-black dark:text-white-dark">
                                 <button onClick={() => setIsAddTaskModal(false)} type="button" className="absolute top-4 ltr:right-4 rtl:left-4 text-white-dark hover:text-dark">
@@ -479,11 +479,11 @@ const Scrumboard = () => {
             </Transition>
             {/* delete task modal */}
             <Transition appear show={isDeleteModal} as={Fragment}>
-                <Dialog as="div" open={isDeleteModal} onClose={() => setIsDeleteModal(false)} className="relative z-[51]">
+                <Dialog as="div" open={isDeleteModal} onClose={() => setIsDeleteModal(false)} className="relative z-51">
                     <TransitionChild as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
                         <div className="fixed inset-0 bg-[black]/60" />
                     </TransitionChild>
-                    <div className="fixed inset-0 z-[999] overflow-y-auto">
+                    <div className="fixed inset-0 z-999 overflow-y-auto">
                         <div className="flex items-center justify-center min-h-screen px-4 ">
                             <TransitionChild
                                 as={Fragment}

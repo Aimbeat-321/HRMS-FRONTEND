@@ -16,7 +16,7 @@ const DashProfileCard: React.FC<DashProfileCardProps> = ({
   position,
 }) => {
   return (
-    <div className="bg-white rounded-3xl shadow-sm border border-gray-200 p-6 w-full max-w-lg">
+    <div className="bg-white rounded-3xl shadow-xs border border-gray-200 p-6 w-full max-w-lg">
       {/* Header */}
       <div className="flex items-center justify-between mb-5">
         <h3 className="text-base font-semibold text-gray-600">Person</h3>

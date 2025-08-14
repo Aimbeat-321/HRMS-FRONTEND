@@ -74,7 +74,7 @@ const DateRangePicker = () => {
             </ul>
             <div className="pt-5 space-y-8">
                 <div className="space-y-8" id="date_time_picker">
-                    <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base">Date and Time Picker</div>
+                    <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base">Date and Time Picker</div>
                     <div className="panel p-3 flex items-center text-primary overflow-x-auto whitespace-nowrap">
                         <div className="ring-2 ring-primary/30 rounded-full bg-primary text-white p-1.5 ltr:mr-3 rtl:ml-3">
                             <IconBell />
@@ -280,7 +280,7 @@ const [date4, setDate4] = useState<any>('13:45');
 
                 <div className="space-y-8" id="js_range_slider">
                     {/*  range picker */}
-                    <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base">Javascript Range Slider</div>
+                    <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base">Javascript Range Slider</div>
                     <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                         {/* Top-Left */}
                         <div className="panel">
@@ -295,7 +295,7 @@ const [date4, setDate4] = useState<any>('13:45');
                             </div>
                             <div className="mb-5 pt-5">
                                 <div className="font-bold">
-                                    <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range1}</span>
+                                    <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range1}</span>
                                     <span>%</span>
                                 </div>
                                 <input type="range" className="w-full py-2.5" value={range1} min={0} max={100} onChange={(e) => setRange1(e.target.value)} />
@@ -307,7 +307,7 @@ const [range1, setRange1] = useState<any>('0');
 
 <div>
     <div className="font-bold">
-        <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range1}</span>
+        <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range1}</span>
         <span>%</span>
     </div>
     <input type="range" className="w-full py-2.5" value={range1} min={0} max={100} onChange={(e) => setRange1(e.target.value)} />
@@ -329,7 +329,7 @@ const [range1, setRange1] = useState<any>('0');
                             </div>
                             <div className="mb-5">
                                 <div className="font-bold ltr:text-right rtl:text-left">
-                                    <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range2}</span>
+                                    <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range2}</span>
                                     <span>%</span>
                                 </div>
                                 <input type="range" className="w-full py-2.5" min="0" max="100" value={range2} onChange={(e) => setRange2(e.target.value)} />
@@ -341,7 +341,7 @@ const [range2, setRange2] = useState<any>('0');
 
 <div>
     <div className="font-bold ltr:text-right rtl:text-left">
-        <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range2}</span>
+        <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range2}</span>
         <span>%</span>
     </div>
     <input type="range" className="w-full py-2.5" min="0" max="100" value={range2} onChange={(e) => setRange2(e.target.value)} />
@@ -364,7 +364,7 @@ const [range2, setRange2] = useState<any>('0');
                             <div className="mb-5">
                                 <input type="range" className="w-full py-2.5" min="0" max="100" value={range3} onChange={(e) => setRange3(e.target.value)} />
                                 <div className="font-bold">
-                                    <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range3}</span>
+                                    <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range3}</span>
                                     <span>%</span>
                                 </div>
                             </div>
@@ -376,7 +376,7 @@ const [range3, setRange3] = useState<any>('0');
 <div>
     <input type="range" className="w-full py-2.5" min="0" max="100" value={range3} onChange={(e) => setRange3(e.target.value)} />
     <div className="font-bold">
-        <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range3}</span>
+        <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range3}</span>
         <span>%</span>
     </div>
 </div>`}</pre>
@@ -398,7 +398,7 @@ const [range3, setRange3] = useState<any>('0');
                             <div className="mb-5">
                                 <input type="range" className="w-full py-2.5" min="0" max="100" value={range4} onChange={(e) => setRange4(e.target.value)} />
                                 <div className="font-bold ltr:text-right rtl:text-left">
-                                    <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range4}</span>
+                                    <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range4}</span>
                                     <span>%</span>
                                 </div>
                             </div>
@@ -410,7 +410,7 @@ const [range4, setRange4] = useState<any>('0');
 <div>
     <input type="range" className="w-full py-2.5" min="0" max="100" value={range4} onChange={(e) => setRange4(e.target.value)} />
     <div className="font-bold ltr:text-right rtl:text-left">
-        <span className="inline-block py-1 px-2 rounded text-primary border border-white-light dark:border-dark">{range4}</span>
+        <span className="inline-block py-1 px-2 rounded-sm text-primary border border-white-light dark:border-dark">{range4}</span>
         <span>%</span>
     </div>
 </div>`}</pre>
@@ -422,7 +422,7 @@ const [range4, setRange4] = useState<any>('0');
 
                 <div className="space-y-8" id="noui_sliders">
                     {/* Nouislider */}
-                    <div className="bg-[#009688]/[.26] text-[#009688] py-1 px-2 rounded inline-block text-base">noUI Slider</div>
+                    <div className="bg-[#009688]/26 text-[#009688] py-1 px-2 rounded-sm inline-block text-base">noUI Slider</div>
                     <div className="panel p-3 flex items-center text-primary overflow-x-auto whitespace-nowrap">
                         <div className="ring-2 ring-primary/30 rounded-full bg-primary text-white p-1.5 ltr:mr-3 rtl:ml-3">
                             <IconBell />
@@ -524,7 +524,7 @@ const slider1Update = (range: any) => {
                                         <span className="text-primary mr-2" id="nouiMin2">
                                             {parseInt(slider2[0]).toFixed(2)}
                                         </span>
-                                        <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded" id="nouiMin2Perc">
+                                        <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded-sm" id="nouiMin2Perc">
                                             {`${parseInt(percent2[0])}%`}
                                         </span>
                                     </div>
@@ -532,7 +532,7 @@ const slider1Update = (range: any) => {
                                         <span className="text-primary mr-2" id="nouiMax2">
                                             {parseInt(slider2[1]).toFixed(2)}
                                         </span>
-                                        <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded" id="nouiMax2Perc">
+                                        <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded-sm" id="nouiMax2Perc">
                                             {`${parseInt(percent2[1])}%`}
                                         </span>
                                     </div>
@@ -569,7 +569,7 @@ const onSide = (render: any, handle: any, value: any, un: any, percent: any) => 
             <span className="text-primary mr-2" id="nouiMin2">
                 {parseInt(slider2[0]).toFixed(2)}
             </span>
-            <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded" id="nouiMin2Perc">
+            <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded-sm" id="nouiMin2Perc">
                 {\`\${parseInt(percent2[0])}%\`}
             </span>
         </div>
@@ -577,7 +577,7 @@ const onSide = (render: any, handle: any, value: any, un: any, percent: any) => 
             <span className="text-primary mr-2" id="nouiMax2">
                 {parseInt(slider2[1]).toFixed(2)}
             </span>
-            <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded" id="nouiMax2Perc">
+            <span className="border border-white-light dark:border-dark py-1 px-2 text-dark dark:text-white-dark rounded-sm" id="nouiMax2Perc">
                 {\`\${parseInt(percent2[1])}%\`}
             </span>
         </div>
