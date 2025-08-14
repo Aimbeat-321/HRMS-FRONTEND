@@ -10,7 +10,6 @@ type DashCardProps = {
   subText?: string;
   onClick?: () => void;
   className?: string;
-  "aria-label"?: string;
 };
 
 const DashCard: React.FC<DashCardProps> = ({
@@ -22,54 +21,54 @@ const DashCard: React.FC<DashCardProps> = ({
   subText,
   onClick,
   className,
-  "aria-label": ariaLabel,
 }) => {
-  const isClickable = !!onClick;
-
   return (
     <div
       onClick={onClick}
       className={clsx(
-        "dash-card",
-        active ? "dash-card-active" : "dash-card-inactive",
-        isClickable && "cursor-pointer hover:scale-[1.03] sm:hover:scale-105 hover:shadow-md",
+        `flex flex-col justify-between 
+         p-3 sm:p-4 md:p-5 
+         rounded-2xl sm:rounded-3xl 
+         shadow-sm cursor-pointer 
+         min-w-[140px] sm:min-w-[160px] md:min-w-[180px] 
+         transition-all duration-200 
+         hover:scale-[1.03] sm:hover:scale-105 
+         hover:shadow-md`,
+        active ? "bg-gray-900 text-white" : "bg-white text-gray-900",
         className
       )}
-      role={isClickable ? "button" : undefined}
-      tabIndex={isClickable ? 0 : undefined}
-      aria-label={ariaLabel || title || "Dashboard card"}
-      onKeyDown={(e) => isClickable && e.key === "Enter" && onClick?.()}
     >
-      {(icon || title) && (
-        <div className="dash-title">
-          {icon && <span className="dash-icon">{icon}</span>}
-          {title}
+      {/* Title + Icon */}
+      <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base font-medium opacity-80">
+        {icon && (
+          <span className="text-base sm:text-lg md:text-xl">{icon}</span>
+        )}
+        {title}
+      </div>
+
+      {/* Value + Percentage */}
+      <div className="flex items-center justify-between flex-wrap gap-2">
+        <div className="mt-1 sm:mt-2 text-xl sm:text-2xl md:text-3xl font-semibold">
+          {value}
         </div>
-      )}
-      {value !== undefined && (
-        <div className="flex items-center justify-between flex-wrap gap-2">
-          <div className="dash-value">
-            {typeof value === "number" ? value.toLocaleString() : value}
-          </div>
-          {(percentage || subText) && (
-            <div
-              className={clsx(
-                "dash-subtext",
-                active ? "dash-subtext-active" : "dash-subtext-inactive"
-              )}
-            >
-              {percentage && <span>+{percentage}%</span>}
-              {subText && (
-                <span className="ml-1 text-gray-400 whitespace-nowrap">
-                  {subText}
-                </span>
-              )}
-            </div>
+
+        {/* Percentage & Subtext */}
+        <div
+          className={clsx(
+            "text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1",
+            active ? "text-blue-400" : "text-blue-600"
+          )}
+        >
+          {percentage && <span>+{percentage}%</span>}
+          {subText && (
+            <span className="ml-1 text-gray-400 whitespace-nowrap">
+              {subText}
+            </span>
           )}
         </div>
-      )}
+      </div>
     </div>
   );
 };
 
-export default DashCard ;
+export default DashCard;
