@@ -6,29 +6,36 @@ import { toggleSidebar } from '../../store/themeConfigSlice';
 import AnimateHeight from 'react-animate-height';
 import { IRootState } from '../../store';
 import { useState, useEffect } from 'react';
-import IconCaretsDown from '../Icon/IconCaretsDown';
-import IconCaretDown from '../Icon/IconCaretDown';
-import IconMenuDashboard from '../Icon/Menu/IconMenuDashboard';
-import IconMinus from '../Icon/IconMinus';
-import IconMenuUsers from '../Icon/Menu/IconMenuUsers';
-import IconMenuCalendar from '../Icon/Menu/IconMenuCalendar';
-import IconMenuContacts from '../Icon/Menu/IconMenuContacts';
-import IconMenuInvoice from '../Icon/Menu/IconMenuInvoice';
-import IconMenuNotes from '../Icon/Menu/IconMenuNotes';
-import IconMenuScrumboard from '../Icon/Menu/IconMenuScrumboard';
-import IconMenuDocumentation from '../Icon/Menu/IconMenuDocumentation';
-import IconMenuTables from '../Icon/Menu/IconMenuTables';
-import IconMenuForms from '../Icon/Menu/IconMenuForms';
-import IconMenuWidgets from '../Icon/Menu/IconMenuWidgets';
-import IconMenuAuthentication from '../Icon/Menu/IconMenuAuthentication';
 import Logo from "../../assets/WeConnect Logo.png";
 import DarkLogo from "../../assets/WeConnect Logo Dark.png"
 import smallLogo from "../../../public/logo192.png";
-import { GoOrganization } from "react-icons/go";
-import { IoPeopleOutline } from "react-icons/io5";
-import { PiCalendarBlank, PiCalendarMinus } from "react-icons/pi";
 
-
+// React Icons - Outlined Variants
+import { 
+  HiOutlineHome, 
+  HiOutlineBuildingOffice,
+  HiOutlineUserGroup,
+  HiOutlineClock,
+  HiOutlineCalendar,
+  HiOutlineUser,
+  HiOutlineClipboard,
+  HiOutlineDocumentText,
+  HiOutlineChartBar,
+  HiOutlineReceiptRefund,
+  HiOutlineSlash,
+  HiOutlineAcademicCap,
+  HiOutlineCube,
+  HiOutlineCalendarDays,
+  HiOutlineCog,
+  HiOutlineLightBulb,
+  HiOutlineDevicePhoneMobile,
+  HiOutlinePause,
+  HiOutlineChartPie,
+  HiOutlineShieldCheck,
+  HiOutlineChevronDoubleLeft,
+  HiOutlineChevronDown,
+  HiOutlineMinus
+} from 'react-icons/hi2';
 
 const Sidebar = () => {
     const [currentMenu, setCurrentMenu] = useState<string>('');
@@ -70,7 +77,7 @@ const Sidebar = () => {
 
     const isSidebarExpanded = themeConfig.sidebar && !(window.innerWidth < 1024);
     const showBigLogo = isSidebarExpanded || (!themeConfig.sidebar && isHovered);
-    console.log('this is semidark and it',)
+
     return (
         <div className={semidark ? 'dark' : ''}>
             <nav
@@ -91,7 +98,7 @@ const Sidebar = () => {
                                 <img
                                     src={smallLogo}
                                     alt="small-logo"
-                                    className={`absolute left-3  transition-opacity duration-300 ease-in-out ${showBigLogo ? 'opacity-0' : 'opacity-100'}`}
+                                    className={`absolute left-3 transition-opacity duration-300 ease-in-out ${showBigLogo ? 'opacity-0' : 'opacity-100'}`}
                                     style={{ width: '38px' }}
                                 />
                             </div>
@@ -101,7 +108,7 @@ const Sidebar = () => {
                             className="collapse-icon w-8 h-8 rounded-full flex items-center hover:bg-gray-500/10 dark:hover:bg-dark-light/10 dark:text-white-light transition duration-300 rtl:rotate-180"
                             onClick={() => dispatch(toggleSidebar())}
                         >
-                            <IconCaretsDown className="m-auto rotate-90" />
+                            <HiOutlineChevronDoubleLeft className="m-auto rotate-90 w-5 h-5" />
                         </button>
                     </div>
                     <PerfectScrollbar className="h-[calc(100vh-80px)] relative">
@@ -110,11 +117,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'home' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('home')}>
                                     <div className="flex items-center">
-                                        <IconMenuDashboard className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineHome className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Home')}</span>
                                     </div>
                                     <div className={currentMenu !== 'home' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'home' ? 'auto' : 0}>
@@ -131,18 +138,17 @@ const Sidebar = () => {
 
                             {/* Organization */}
                             <h2 className="py-3 px-7 flex items-center uppercase font-extrabold bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] -mx-4 mb-1">
-                                <IconMinus className="w-4 h-5 flex-none hidden" />
+                                <HiOutlineMinus className="w-4 h-5 flex-none" />
                                 <span>{t('Organization')}</span>
                             </h2>
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'organization' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('organization')}>
                                     <div className="flex items-center">
-                                      
-                                        <GoOrganization className="group-hover:text-primary! shrink-0"  />
+                                        <HiOutlineBuildingOffice className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Organization')}</span>
                                     </div>
                                     <div className={currentMenu !== 'organization' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'organization' ? 'auto' : 0}>
@@ -164,12 +170,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'people' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('people')}>
                                     <div className="flex items-center">
-                                     
-                                        <IoPeopleOutline   className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineUserGroup className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('People')}</span>
                                     </div>
                                     <div className={currentMenu !== 'people' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'people' ? 'auto' : 0}>
@@ -194,11 +199,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'attendance' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('attendance')}>
                                     <div className="flex items-center">
-                                        <PiCalendarBlank className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineClock className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Attendance & Time')}</span>
                                     </div>
                                     <div className={currentMenu !== 'attendance' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'attendance' ? 'auto' : 0}>
@@ -235,11 +240,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'leave' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('leave')}>
                                     <div className="flex items-center">
-                                        <PiCalendarMinus className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineCalendar className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Leave')}</span>
                                     </div>
                                     <div className={currentMenu !== 'leave' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'leave' ? 'auto' : 0}>
@@ -264,11 +269,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'recruitment' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('recruitment')}>
                                     <div className="flex items-center">
-                                        <IconMenuScrumboard className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineUser className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Recruitment')}</span>
                                     </div>
                                     <div className={currentMenu !== 'recruitment' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'recruitment' ? 'auto' : 0}>
@@ -293,11 +298,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'onboarding' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('onboarding')}>
                                     <div className="flex items-center">
-                                        <IconMenuNotes className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineClipboard className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Onboarding')}</span>
                                     </div>
                                     <div className={currentMenu !== 'onboarding' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'onboarding' ? 'auto' : 0}>
@@ -322,11 +327,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'docs' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('docs')}>
                                     <div className="flex items-center">
-                                        <IconMenuDocumentation className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineDocumentText className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Compliance & Documents')}</span>
                                     </div>
                                     <div className={currentMenu !== 'docs' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'docs' ? 'auto' : 0}>
@@ -348,11 +353,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'performance' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('performance')}>
                                     <div className="flex items-center">
-                                        <IconMenuWidgets className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineChartBar className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Performance')}</span>
                                     </div>
                                     <div className={currentMenu !== 'performance' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'performance' ? 'auto' : 0}>
@@ -377,11 +382,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'reimbursements' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('reimbursements')}>
                                     <div className="flex items-center">
-                                        <IconMenuInvoice className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineReceiptRefund className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Reimbursements')}</span>
                                     </div>
                                     <div className={currentMenu !== 'reimbursements' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'reimbursements' ? 'auto' : 0}>
@@ -403,11 +408,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'payroll' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('payroll')}>
                                     <div className="flex items-center">
-                                        <IconMenuInvoice className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineSlash className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Payroll & Compensation')}</span>
                                     </div>
                                     <div className={currentMenu !== 'payroll' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'payroll' ? 'auto' : 0}>
@@ -432,11 +437,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'learning' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('learning')}>
                                     <div className="flex items-center">
-                                        <IconMenuNotes className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineAcademicCap className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Learning, Skills & Career')}</span>
                                     </div>
                                     <div className={currentMenu !== 'learning' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'learning' ? 'auto' : 0}>
@@ -458,11 +463,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'admin-assets' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('admin-assets')}>
                                     <div className="flex items-center">
-                                        <IconMenuTables className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineCube className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Assets & Vendors')}</span>
                                     </div>
                                     <div className={currentMenu !== 'admin-assets' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'admin-assets' ? 'auto' : 0}>
@@ -481,11 +486,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'rooms' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('rooms')}>
                                     <div className="flex items-center">
-                                        <IconMenuCalendar className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineCalendarDays className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Facilities')}</span>
                                     </div>
                                     <div className={currentMenu !== 'rooms' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'rooms' ? 'auto' : 0}>
@@ -507,11 +512,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'offboarding' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('offboarding')}>
                                     <div className="flex items-center">
-                                        <IconMenuNotes className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineCog className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Resignation & Offboarding')}</span>
                                     </div>
                                     <div className={currentMenu !== 'offboarding' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'offboarding' ? 'auto' : 0}>
@@ -533,11 +538,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'workflows' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('workflows')}>
                                     <div className="flex items-center">
-                                        <IconMenuForms className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineLightBulb className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Workflows & Notifications')}</span>
                                     </div>
                                     <div className={currentMenu !== 'workflows' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'workflows' ? 'auto' : 0}>
@@ -556,11 +561,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'mobile' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('mobile')}>
                                     <div className="flex items-center">
-                                        <IconMenuForms className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineDevicePhoneMobile className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Mobile')}</span>
                                     </div>
                                     <div className={currentMenu !== 'mobile' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'mobile' ? 'auto' : 0}>
@@ -582,11 +587,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'integrations' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('integrations')}>
                                     <div className="flex items-center">
-                                        <IconMenuAuthentication className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlinePause className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Integrations & IT')}</span>
                                     </div>
                                     <div className={currentMenu !== 'integrations' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'integrations' ? 'auto' : 0}>
@@ -608,11 +613,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'reports' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('reports')}>
                                     <div className="flex items-center">
-                                        <IconMenuWidgets className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineChartPie className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Reporting & Analytics')}</span>
                                     </div>
                                     <div className={currentMenu !== 'reports' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'reports' ? 'auto' : 0}>
@@ -634,11 +639,11 @@ const Sidebar = () => {
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'iam' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('iam')}>
                                     <div className="flex items-center">
-                                        <IconMenuAuthentication className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineShieldCheck className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('Security & IAM')}</span>
                                     </div>
                                     <div className={currentMenu !== 'iam' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'iam' ? 'auto' : 0}>
@@ -655,17 +660,17 @@ const Sidebar = () => {
 
                             {/* System */}
                             <h2 className="py-3 px-7 flex items-center uppercase font-extrabold bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] -mx-4 mb-1">
-                                <IconMinus className="w-4 h-5 flex-none hidden" />
+                                <HiOutlineMinus className="w-4 h-5 flex-none" />
                                 <span>{t('System')}</span>
                             </h2>
                             <li className="menu nav-item">
                                 <button type="button" className={`${currentMenu === 'system' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('system')}>
                                     <div className="flex items-center">
-                                        <IconMenuDocumentation className="group-hover:text-primary! shrink-0" />
+                                        <HiOutlineCog className="group-hover:text-primary! shrink-0 w-5 h-5" />
                                         <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t('System')}</span>
                                     </div>
                                     <div className={currentMenu !== 'system' ? 'rtl:rotate-90 -rotate-90' : ''}>
-                                        <IconCaretDown />
+                                        <HiOutlineChevronDown className="w-4 h-4" />
                                     </div>
                                 </button>
                                 <AnimateHeight duration={300} height={currentMenu === 'system' ? 'auto' : 0}>
