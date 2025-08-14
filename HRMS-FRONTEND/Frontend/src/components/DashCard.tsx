@@ -72,4 +72,4 @@ const DashCard: React.FC<DashCardProps> = ({
   );
 };
 
-export default ;
+export default DashCard ;
