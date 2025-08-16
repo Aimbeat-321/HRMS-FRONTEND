@@ -9,14 +9,14 @@ const data = [
 
 const WorkingFormatChart = () => {
   return (
-    <div className="bg-white rounded-3xl shadow-xs border border-gray-200 p-4 w-full max-w-3xl mx-auto h-auto min-h-[300px] sm:min-h-[330px] md:min-h-[360px]">
+    <div className="bg-white rounded-3xl shadow-xs border border-gray-200 p-4 w-full  min-h-[300px] sm:min-h-[330px] md:min-h-[360px]">
         {/* Header */}
             <div className="flex items-center justify-between mb-5">
                 <h3 className="text-base font-semibold text-gray-600">Person</h3>
                 <span className="text-sm text-gray-400">Details</span>
             </div>
 
-      <div className="relative w-full h-48 sm:h-56 md:h-64">
+      <div className="relative h-48 sm:h-56 md:h-64">
         <ResponsiveContainer width="100%" height="100%">
           <RadialBarChart 
             innerRadius="40%" 
@@ -60,7 +60,7 @@ const WorkingFormatChart = () => {
         </div>
       </div>
     </div>
-  );
+  );  
 };
 
 export default WorkingFormatChart;

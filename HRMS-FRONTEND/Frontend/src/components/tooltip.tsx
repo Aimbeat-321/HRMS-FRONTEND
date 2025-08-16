@@ -1,61 +1,56 @@
-"use client"
+import React, { ReactNode } from "react";
 
-import * as React from "react"
-import * as TooltipPrimitive from "@radix-ui/react-tooltip"
+type TooltipDirection = "top" | "bottom" | "left" | "right";
 
-import { cn } from "@/lib/utils"
+type TooltipButtonProps = {
+  message: string;
+  direction?: TooltipDirection;
+  children?: ReactNode;
+};
 
-function TooltipProvider({
-  delayDuration = 0,
-  ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Provider>) {
-  return (
-    <TooltipPrimitive.Provider
-      data-slot="tooltip-provider"
-      delayDuration={delayDuration}
-      {...props}
-    />
-  )
-}
-
-function Tooltip({
-  ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Root>) {
-  return (
-    <TooltipProvider>
-      <TooltipPrimitive.Root data-slot="tooltip" {...props} />
-    </TooltipProvider>
-  )
-}
-
-function TooltipTrigger({
-  ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Trigger>) {
-  return <TooltipPrimitive.Trigger data-slot="tooltip-trigger" {...props} />
-}
-
-function TooltipContent({
-  className,
-  sideOffset = 0,
+const TooltipButton: React.FC<TooltipButtonProps> = ({
+  message,
+  direction = "top",
   children,
-  ...props
-}: React.ComponentProps<typeof TooltipPrimitive.Content>) {
-  return (
-    <TooltipPrimitive.Portal>
-      <TooltipPrimitive.Content
-        data-slot="tooltip-content"
-        sideOffset={sideOffset}
-        className={cn(
-          "bg-primary text-primary-foreground animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 w-fit origin-(--radix-tooltip-content-transform-origin) rounded-md px-3 py-1.5 text-xs text-balance",
-          className
-        )}
-        {...props}
-      >
-        {children}
-        <TooltipPrimitive.Arrow className="bg-primary fill-primary z-50 size-2.5 translate-y-[calc(-50%-2px)] rotate-45 rounded-[2px]" />
-      </TooltipPrimitive.Content>
-    </TooltipPrimitive.Portal>
-  )
-}
+}) => {
+  const tooltipPosition: Record<TooltipDirection, string> = {
+    top: "bottom-full mb-2 left-1/2 -translate-x-1/2",
+    bottom: "top-full mt-2 left-1/2 -translate-x-1/2",
+    left: "right-full mr-2 top-1/2 -translate-y-1/2",
+    right: "left-full ml-2 top-1/2 -translate-y-1/2",
+  };
 
-export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider }
+  const arrowPosition: Record<TooltipDirection, string> = {
+    top: "left-1/2 -bottom-1 -translate-x-1/2",
+    bottom: "left-1/2 -top-1 -translate-x-1/2",
+    left: "top-1/2 -right-1 -translate-y-1/2",
+    right: "top-1/2 -left-1 -translate-y-1/2",
+  };
+
+  const isVertical = direction === "top" || direction === "bottom";
+
+  return (
+    <div
+      className={`flex w-[34px] h-[18px] pt-[4px] pr-[10px] pb-[4px] pl-[10px]  ${
+        isVertical ? "flex-col" : "flex-row"
+      } items-center space-${isVertical ? "y" : "x"}-2 mt-10`}
+    >
+      <div className="relative group inline-block">
+        {/* Tooltip */}
+        <div
+          className={`absolute ${tooltipPosition[direction]} bg-black text-white text-xs font-semibold py-1 px-2 rounded-[6px] opacity-0 group-hover:opacity-100 transition-opacity z-10`}
+        >
+          <label className="relative z-10">{message}</label>
+          <div
+            className={`absolute w-[15.82px] h-[12px] rounded-[1px] bg-black rotate-45 ${arrowPosition[direction]}`}
+          />
+        </div>
+
+        {/* Trigger Component */}
+        {children || "+"}
+      </div>
+    </div>
+  );
+};
+
+export default TooltipButton;

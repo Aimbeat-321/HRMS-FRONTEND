@@ -35,6 +35,7 @@ import {
   HiOutlineMinus
 } from 'react-icons/hi2';
 
+
 interface MenuItem {
   id: string;
   title: string;
@@ -345,7 +346,7 @@ const Sidebar = () => {
         <AnimateHeight duration={300} height={currentMenu === item.id ? 'auto' : 0}>
           <ul className="sub-menu text-gray-500">
             {item.subItems.map((subItem, index) => (
-              <li key={index}>
+              <li key={index} className='flex items-center'>
                 <NavLink to={subItem.path}>{t(subItem.label)}</NavLink>
               </li>
             ))}
@@ -370,7 +371,7 @@ const Sidebar = () => {
                   src={themeConfig.isDarkMode ? DarkLogo : Logo}
                   alt="logo"
                   className={`absolute left-8 transition-opacity duration-300 ease-in-out ${showBigLogo ? 'opacity-100' : 'opacity-0'}`}
-                  style={{ width: '180px' }}
+                  style={{ width: '170px' }}
                 />
                 <img
                   src={smallLogo}

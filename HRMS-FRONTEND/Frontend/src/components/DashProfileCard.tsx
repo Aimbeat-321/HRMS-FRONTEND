@@ -33,7 +33,7 @@ const DashProfileCard: React.FC<DashProfileCardProps> = ({ imgUrl, firstName, la
                     <div className='absolute bottom-1 w-[90%] right-[11px]  flex items-center justify-center border  rounded-3xl py-2 text-secondary-blue cursor-pointer text-lg hover:scale-105 bg-white/70 backdrop-blur-lg transition-all duration-200'>
                         {/* icon */}
                         <MdOutlineChangeCircle className='text-2xl' />
-                        <p>Change image</p>
+                        <p className='text-sm shadow-xs'>Change image</p>
                     </div>
                 </div>
                 <div className='w-1/2'>
