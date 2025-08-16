@@ -51,9 +51,16 @@ const HRMS = () => {
                     <DashCard icon={<Wallet />} title="Salary" value="$3,287" percentage="12.4" subText="last week"  />
                 </div>
 
-                <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 xl:grid-cols-3  gap-[30px]">
                     <DashProfileCard
                         imgUrl={fakeProfile.imgUrl}
+                        firstName={fakeProfile.firstName}
+                        lastName={fakeProfile.lastName}
+                        emailAddress={fakeProfile.emailAddress}
+                        position={fakeProfile.position}
+                    />
+                    <DashProfileCard
+                        imgUrl={'https://img.freepik.com/free-photo/portrait-expressive-young-man-wearing-formal-suit_273609-6942.jpg'}
                         firstName={fakeProfile.firstName}
                         lastName={fakeProfile.lastName}
                         emailAddress={fakeProfile.emailAddress}
