@@ -332,7 +332,7 @@ const Sidebar = () => {
         onClick={() => toggleMenu(item.id)}
       >
         <div className="flex items-center">
-          <item.icon className="group-hover:text-primary! shrink-0 w-5 h-5" />
+          <item.icon className="group-hover:text-secondary-blue! shrink-0 w-5 h-5" />
           <span className="ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark">{t(item.title)}</span>
         </div>
         {item.subItems.length > 0 && (
