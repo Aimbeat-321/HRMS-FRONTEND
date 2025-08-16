@@ -56,7 +56,7 @@ const DashCard: React.FC<DashCardProps> = ({
         {/* Percentage & Subtext */}
         <div
           className={clsx(
-            "text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1 text-blue-400 hover:text-blue-600 dark:text-blue-300 dark:hover:text-blue-500"
+            "text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1 text-secondary-blue dark:text-blue-300 dark:hover:text-blue-500"
           )}
         >
           {percentage && <span>+{percentage}%</span>}

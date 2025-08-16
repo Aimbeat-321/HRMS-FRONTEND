@@ -21,7 +21,7 @@ const HRMS = () => {
     });
 
     const fakeProfile = {
-        imgUrl: "https://randomuser.me/api/portraits/men/75.jpg",
+        imgUrl: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
         firstName: "John",
         lastName: "Doe",
         emailAddress: "john.doe@example.com",
