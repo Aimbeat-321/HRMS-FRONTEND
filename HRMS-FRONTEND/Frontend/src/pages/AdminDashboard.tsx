@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Loader2, BadgeCheck, Wallet } from "lucide-react";
+import { CheckCircle, Loader2, BadgeCheck, Wallet } from 'lucide-react';
 import Dropdown from '../components/Dropdown';
 import { useDispatch, useSelector } from 'react-redux';
 import { IRootState } from '../store';
@@ -21,11 +21,11 @@ const HRMS = () => {
     });
 
     const fakeProfile = {
-        imgUrl: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
-        firstName: "John",
-        lastName: "Doe",
-        emailAddress: "john.doe@example.com",
-        position: "Software Engineer",
+        imgUrl: 'https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg',
+        firstName: 'John',
+        lastName: 'Doe',
+        emailAddress: 'john.doe@example.com',
+        position: 'Software Engineer',
     };
 
     const isRtl = useSelector((state: IRootState) => state.themeConfig.rtlClass) === 'rtl';
@@ -44,11 +44,10 @@ const HRMS = () => {
             </ul>
             <div className="pt-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-6 text-white">
-                    <DashCard icon={<CheckCircle />} title="Days in Company" value="295" percentage="5.2" subText="last month"
-                    />
+                    <DashCard icon={<CheckCircle />} title="Days in Company" value="295" percentage="5.2" subText="last month" active={true} />
                     <DashCard icon={<Loader2 />} title="Projects in progress" value="6" percentage="1" subText="last month" />
                     <DashCard icon={<BadgeCheck />} title="Active HR Projects" value="48" percentage="7.8" subText="increase" />
-                    <DashCard icon={<Wallet />} title="Salary" value="$3,287" percentage="12.4" subText="last week"  />
+                    <DashCard icon={<Wallet />} title="Salary" value="$3,287" percentage="12.4" subText="last week" />
                 </div>
 
                 <div className="grid grid-cols-1 xl:grid-cols-3  gap-[30px]">

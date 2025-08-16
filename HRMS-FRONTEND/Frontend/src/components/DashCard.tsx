@@ -19,6 +19,7 @@ const DashCard: React.FC<DashCardProps> = ({
   percentage,
   subText,
   onClick,
+  active = false,
   className,
 }) => {
   return (
@@ -26,14 +27,15 @@ const DashCard: React.FC<DashCardProps> = ({
       onClick={onClick}
       className={clsx(
         `flex flex-col justify-between 
-         p-3 sm:p-4 md:p-5 min-h-[120px]
+         p-3 sm:p-4 md:p-5 min-h-[150px]
          rounded-2xl sm:rounded-3xl 
+         select-none
          shadow-sm cursor-pointer 
          min-w-[140px] sm:min-w-[160px] md:min-w-[180px] 
-         bg-white dark:bg-primary-black
-         transition-all duration-200 
+          dark:bg-primary-black
+         transition-all duration-200 ${active ? 'bg-primary-black  text-white ' : 'bg-white hover:bg-primary-black '}
          hover:scale-[1.03] sm:hover:scale-105 
-         hover:shadow-md hover:bg-primary-black 
+         hover:shadow-md 
          text-primary-black dark:text-white  group
          hover:text-white dark:hover:text-white`,
         className
@@ -42,7 +44,7 @@ const DashCard: React.FC<DashCardProps> = ({
       {/* Title + Icon */}
       <div className="flex items-center gap-1  sm:gap-2 text-xs sm:text-sm md:text-base font-medium opacity-80 dark:opacity-90">
         {icon && (
-          <span className="text-base group-hover:text-secondary-blue sm:text-lg md:text-xl">{icon}</span>
+          <span className={clsx(`text-base  ${active ? "text-secondary-blue" : "group-hover:text-secondary-blue"}  sm:text-lg md:text-xl`)}>{icon}</span>
         )}
         {title}
       </div>
@@ -56,7 +58,7 @@ const DashCard: React.FC<DashCardProps> = ({
         {/* Percentage & Subtext */}
         <div
           className={clsx(
-            "text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1 text-secondary-blue dark:text-blue-300 dark:hover:text-blue-500"
+            `text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1  text-secondary-blue dark:text-secondary-blue dark:hover:text-blue-500`
           )}
         >
           {percentage && <span>+{percentage}%</span>}
